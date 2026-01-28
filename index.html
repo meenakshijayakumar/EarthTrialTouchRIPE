@@ -1,127 +1,151 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TouchRIPE</title>
-
-  <!-- Existing CSS -->
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>WebTech</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 
-<body>
+<body class="is-preload landing">
+<div id="page-wrapper">
 
-  <!-- ===================== HEADER ===================== -->
-  <header>
-    <div class="container">
-      <h1 class="logo">WebTech</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#products">PRODUCTS</a></li>
-          <li><a href="#portfolio">PORTFOLIO</a></li>
-          <li><a href="#contact">CONTACT US</a></li>
-        </ul>
-      </nav>
-      <a href="#" class="btn">Get a Free Quote</a>
-    </div>
+  <!-- Header -->
+  <header id="header">
+    <h1 id="logo"><a href="index.html">WebTech</a></h1>
+    <nav id="nav">
+      <ul>
+        <li><a href="#banner">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#" class="button primary">Get a Free Quote</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- ===================== HERO / FIRST PAGE ===================== -->
-  <section id="home" class="hero-section">
-    <div class="hero-content">
-      <h1>ELEVATE YOUR VISION, IGNITE<br />TOMORROW’S INNOVATION.</h1>
-      <p>Crafting Digital Excellence for a Future<br />Beyond Imagination.</p>
+  <!-- Banner -->
+  <section id="banner">
+    <div class="content">
+      <header>
+        <h2>ELEVATE YOUR VISION, IGNITE TOMORROW’S INNOVATION.</h2>
+        <p>Crafting Digital Excellence for a Future<br />Beyond Imagination.</p>
+      </header>
     </div>
-
-    <!-- ===== MOVED QUANTITATIVE STATS HERE (FROM BELOW) ===== -->
-    <div class="stats-section">
-      <div class="stat-box">
-        <h2>400+</h2>
-        <p>Projects Completed</p>
-      </div>
-      <div class="stat-box">
-        <h2>98%</h2>
-        <p>Successful Years</p>
-      </div>
-      <div class="stat-box">
-        <h2>15+</h2>
-        <p>Client Retention</p>
-      </div>
-      <div class="stat-box">
-        <h2>30+</h2>
-        <p>Countries</p>
-      </div>
-    </div>
+    <a href="#stats" class="goto-next scrolly">Next</a>
   </section>
 
-  <!-- ===================== PRODUCTS SECTION (NEW) ===================== -->
-  <section id="products" class="products-section">
+  <!-- STATS ON FIRST PAGE -->
+  <section id="stats" class="wrapper style1 special fade-up">
     <div class="container">
-      <h2 class="section-title">PRODUCTS</h2>
-      <p class="section-subtitle">
-        Innovative sensing solutions designed for real-world impact
-      </p>
-
-      <div class="products-grid">
-
-        <div class="product-card">
-          <img src="images/product1.jpg" alt="Product 1">
-          <h3>TouchRIPE Handheld Device</h3>
-          <p>
-            A compact tactile sensing device designed to assess fruit ripeness
-            through non-destructive digital palpation.
-          </p>
-        </div>
-
-        <div class="product-card">
-          <img src="images/product2.jpg" alt="Product 2">
-          <h3>On-Tree Ripeness Analyzer</h3>
-          <p>
-            Enables real-time ripeness estimation directly on trees,
-            supporting smarter harvesting decisions.
-          </p>
-        </div>
-
-        <div class="product-card">
-          <img src="images/product3.jpg" alt="Product 3">
-          <h3>AI Ripeness Dashboard</h3>
-          <p>
-            A visual analytics platform that converts tactile data into
-            actionable ripeness insights using AI models.
-          </p>
-        </div>
-
-        <div class="product-card">
-          <img src="images/product4.jpg" alt="Product 4">
-          <h3>Research Prototype Kit</h3>
-          <p>
-            A modular research kit for universities and labs exploring
-            tactile sensing and agricultural robotics.
-          </p>
-        </div>
-
+      <div class="row">
+        <section class="col-3 col-6-medium col-12-small">
+          <h2>400+</h2>
+          <p>Projects Completed</p>
+        </section>
+        <section class="col-3 col-6-medium col-12-small">
+          <h2>98%</h2>
+          <p>Successful Years</p>
+        </section>
+        <section class="col-3 col-6-medium col-12-small">
+          <h2>15+</h2>
+          <p>Client Retention</p>
+        </section>
+        <section class="col-3 col-6-medium col-12-small">
+          <h2>30+</h2>
+          <p>Countries</p>
+        </section>
       </div>
     </div>
   </section>
 
-  <!-- ===================== EXISTING SECTIONS (UNCHANGED) ===================== -->
-  <!-- Keep EVERYTHING below exactly as it was earlier -->
+  <!-- PRODUCTS SECTION -->
+  <section id="products" class="wrapper style2">
+    <div class="inner">
+      <header class="major">
+        <h2>PRODUCTS</h2>
+        <p>Innovative sensing solutions designed for real-world impact</p>
+      </header>
 
-  <!-- Portfolio -->
-  <section id="portfolio">
-    <!-- existing code untouched -->
+      <div class="box alt">
+        <div class="row gtr-uniform">
+
+          <div class="col-3 col-6-medium col-12-small">
+            <span class="image fit"><img src="images/product1.jpg" alt="" /></span>
+            <h3>TouchRIPE Device</h3>
+            <p>Hand-held fruit ripeness assessment using tactile sensing.</p>
+          </div>
+
+          <div class="col-3 col-6-medium col-12-small">
+            <span class="image fit"><img src="images/product2.jpg" alt="" /></span>
+            <h3>Smart Palpation Module</h3>
+            <p>Vision-based tactile sensing for precision agriculture.</p>
+          </div>
+
+          <div class="col-3 col-6-medium col-12-small">
+            <span class="image fit"><img src="images/product3.jpg" alt="" /></span>
+            <h3>Embedded AI Sensor</h3>
+            <p>Real-time firmness classification with edge AI.</p>
+          </div>
+
+          <div class="col-3 col-6-medium col-12-small">
+            <span class="image fit"><img src="images/product4.jpg" alt="" /></span>
+            <h3>Research Prototype</h3>
+            <p>Experimental platform for agricultural robotics.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <!-- existing code untouched -->
+  <!-- PORTFOLIO / EXISTING SECTIONS -->
+  <section id="portfolio" class="spotlight style1 bottom">
+    <span class="image fit main"><img src="images/touchripe_img.jpg" alt="" /></span>
+    <div class="content">
+      <div class="container">
+        <header>
+          <h2>Research & Innovation</h2>
+          <p>Advanced sensing systems for real-world applications.</p>
+        </header>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="wrapper style1 special fade-up">
+    <div class="container">
+      <header class="major">
+        <h2>Contact Us</h2>
+        <p>Let’s build the future together.</p>
+      </header>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>© 2026 TouchRIPE. All Rights Reserved.</p>
+  <footer id="footer">
+    <ul class="icons">
+      <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+      <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+    </ul>
+    <ul class="copyright">
+      <li>&copy; WebTech. All rights reserved.</li>
+      <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+    </ul>
   </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>
