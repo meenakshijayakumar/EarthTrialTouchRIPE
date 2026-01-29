@@ -826,13 +826,14 @@ section.visible {
 
 .owl-nav .owl-prev {
   position: absolute;
-  left: -60px;
+  left: 10px;
 }
 
 .owl-nav .owl-next {
   position: absolute;
-  right: -60px;
+  right: 10px;
 }
+
 
 .carousel-nav {
   font-size: 48px;
@@ -845,6 +846,11 @@ section.visible {
 .carousel-nav:hover {
   opacity: 1;
 }
+
+.carousel-nav {
+  font-size: 56px;
+}
+
 
 /* =========================
    MEDIA IMAGE SIZE
@@ -861,5 +867,13 @@ section.visible {
   transform: scale(1.18);
 }
 
+/* =========================
+   FIX: MEDIA carousel image size
+   ========================= */
+
+#about-us .owl-carousel .owl-item img {
+  max-width: none;      /* override 150px limit */
+  width: 100%;
+}
 
 
