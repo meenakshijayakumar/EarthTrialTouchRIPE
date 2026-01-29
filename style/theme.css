@@ -928,4 +928,17 @@ section.visible {
   display: block;
 }
 
+/* FORCE SPACE BETWEEN PRODUCT SLIDES */
+#about-us .owl-item {
+  padding: 0 20px;   /* THIS creates visible space */
+  box-sizing: border-box;
+}
+
+/* Make images big but not touching */
+#about-us .about-us-img img {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  display: block;
+}
 
