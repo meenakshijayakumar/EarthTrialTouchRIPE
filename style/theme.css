@@ -951,3 +951,25 @@ section.visible {
   padding: 10px;
 }
 
+/* PRODUCTS: add breathing room per item */
+#about-us .about-us-content {
+  padding: 20px;
+}
+
+/* PRODUCTS: slightly separate each product visually */
+#about-us .col-xl-3 {
+  display: flex;
+}
+
+/* PRODUCTS image sizing */
+#about-us .about-us-img img {
+  max-width: 360px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* PRODUCTS text spacing */
+#about-us .about-us-text {
+  margin-top: 16px;
+}
