@@ -942,3 +942,7 @@ section.visible {
   display: block;
 }
 
+#about-us .about-us-img {
+  padding: 10px;
+}
+
