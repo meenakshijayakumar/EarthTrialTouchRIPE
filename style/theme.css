@@ -914,3 +914,18 @@ section.visible {
   right: -50px;
 }
 
+
+/* MEDIA CAROUSEL ITEM SPACING */
+.about-us-info .owl-item {
+  padding: 0 15px;   /* visual breathing room */
+}
+
+/* MEDIA CAROUSEL IMAGE SIZE */
+.about-us-info .about-us-img img {
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+
