@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
       loop: true,
       center: true,
       items: 3,
-      margin: 0,
+      margin: 50,
       autoplay: true,
       dots:true,
       autoplayTimeout: 8500,
@@ -27,7 +27,7 @@ jQuery(document).ready(function($) {
 // MEDIA / OUR WORK CAROUSEL
 $('.about-us-info.owl-carousel').owlCarousel({
   loop: true,
-  margin: 30,
+  margin: 50,
   nav: true,              // ← ARROWS ENABLED
   dots: false,
   mouseDrag: true,
