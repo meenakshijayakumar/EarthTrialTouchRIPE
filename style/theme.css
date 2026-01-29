@@ -884,3 +884,33 @@ section.visible {
   display: block;
 }
 
+
+/* MEDIA CAROUSEL NAV ARROWS */
+.about-us-info .owl-nav {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.about-us-info .owl-nav button {
+  pointer-events: all;
+  background: transparent !important;
+  border: none;
+  position: absolute;
+}
+
+.about-us-info .media-prev,
+.about-us-info .media-next {
+  font-size: 48px;
+  color: #fff;
+}
+
+.about-us-info .owl-prev {
+  left: -50px;
+}
+
+.about-us-info .owl-next {
+  right: -50px;
+}
+
