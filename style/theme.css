@@ -729,10 +729,15 @@ ul {
   transform: scale3d(1.0, 1.0, 1);
 }
 
-.owl-carousel .owl-item img {
+/*.owl-carousel .owl-item img {
   transform-style: preserve-3d;
   max-width: 150px;
+}*/
+
+#customers-testimonials .owl-item img {
+  max-width: 150px;
 }
+
 
 #customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
 #customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
