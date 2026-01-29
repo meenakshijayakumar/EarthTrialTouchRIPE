@@ -1241,5 +1241,23 @@
     <!-- Dust Animation -->
     <script src="./script/dustAnimation.js"></script>
 
+    <script>
+  $(document).ready(function () {
+    $(".about-us-info.owl-carousel").owlCarousel({
+      loop: true,
+      margin: 30,
+      nav: true,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      responsive: {
+        0: { items: 1 },
+        768: { items: 2 },
+        1200: { items: 4 }
+      }
+    });
+  });
+</script>
+
   </body>
 </html>
