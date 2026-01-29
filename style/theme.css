@@ -876,4 +876,11 @@ section.visible {
   width: 100%;
 }
 
+/* MEDIA CAROUSEL IMAGE SIZE */
+.about-us-info .about-us-img img {
+  width: 100%;
+  max-width: 420px;   /* increase size */
+  margin: 0 auto;
+  display: block;
+}
 
