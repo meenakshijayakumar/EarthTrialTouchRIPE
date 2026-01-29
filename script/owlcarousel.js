@@ -23,3 +23,28 @@ jQuery(document).ready(function($) {
       }
   });
 });
+
+// MEDIA / OUR WORK CAROUSEL
+$('.about-us-info.owl-carousel').owlCarousel({
+  loop: true,
+  margin: 30,
+  nav: true,              // ← ARROWS ENABLED
+  dots: false,
+  mouseDrag: true,
+  touchDrag: true,
+  navText: [
+    "<span class='media-nav media-prev'>&lsaquo;</span>",
+    "<span class='media-nav media-next'>&rsaquo;</span>"
+  ],
+  responsive: {
+    0: {
+      items: 1
+    },
+    768: {
+      items: 2
+    },
+    1200: {
+      items: 3
+    }
+  }
+});
