@@ -1005,26 +1005,27 @@
   });
 </script>
 
+
   <script>
   const form = document.getElementById("contactForm");
 
   form.addEventListener("submit", function (e) {
-    e.preventDefault(); // stop page reload
+    e.preventDefault();
 
     const formData = new FormData(form);
 
-    fetch("https://script.google.com/macros/s/AKfycbx0u-vWaEjd2S5Eg2O-LrLF5LmotteElTKKXEy1Qjw1_ehtE64NsgRaMcQvFUWL1riS0w/exec", {
+    fetch("PASTE_NEW_WEB_APP_URL_HERE", {
       method: "POST",
       body: formData
     })
-    .then(response => response.text())
-    .then(data => {
+    .then(res => res.text())
+    .then(() => {
       alert("✅ Form submitted successfully!");
       form.reset();
     })
-    .catch(error => {
+    .catch(err => {
+      console.error(err);
       alert("❌ Error submitting form");
-      console.error(error);
     });
   });
 </script>
