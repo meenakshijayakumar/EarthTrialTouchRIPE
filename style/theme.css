@@ -6,7 +6,11 @@
   --bs-secondary-color: #1E1E1E;
   --bs-text-primary-color: #a1a1a1;
   --bs-text-secondary-color: #f1f1f1;
+
+  /* NEW BRAND GREEN */
+  --bs-accent-green: #0F4D3A;
 }
+
 
 * {
   user-select: none;
@@ -121,10 +125,11 @@ ul {
   color: var(--bs-text-secondary-color) !important;
 }
 
+
 .nav-link:hover {
-  color: var(--bs-text-secondary-color) !important;
-  letter-spacing: 1.5px;
+  color: var(--bs-accent-green) !important;
 }
+
 
 .theme-cta .arrow-icon {
   margin-left: 8px;
@@ -184,6 +189,8 @@ ul {
 
 .hero-heading {
   font-size: 3.5rem;
+  color: var(--bs-accent-green);
+  text-shadow: 0 0 12px rgba(15, 77, 58, 0.4);
 }
 
 .hero-subheading {
@@ -978,3 +985,15 @@ section.visible {
 #about-us .about-us-text {
   margin-top: 16px;
 }
+
+/* HERO COUNTER NUMBERS */
+#counter-section .counter {
+  color: var(--bs-accent-green);
+}
+
+
+/* HERO COUNTER LABELS */
+#counter-section p {
+  color: rgba(15, 77, 58, 0.8);
+}
+
