@@ -13,6 +13,7 @@
 
   --bs-accent-green: #0F4D3A;
   --hero-light-green: #CFE8DB;   /* soft light green */
+  --app-bg: #E6F4EC;
 
 }
 
@@ -26,7 +27,7 @@ body {
   padding: 0;
   font-family: 'Manrope', sans-serif;
   font-size: 1rem;
-  background-color: var(--bg-main);
+  background-color: var(--app-bg);
   color: var(--text-main);
   scroll-behavior: smooth;
 }
@@ -245,7 +246,7 @@ ul {
 #get-in-touch,
 #portfolio,
 #testimonial {
-  background-color: var(--bg-soft);
+  background-color: var(--app-bg);
 }
 
 .section-heading {
@@ -994,4 +995,15 @@ section.visible {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
+
+/* LIGHT THEME TEXT FIX */
+/*
+body,
+p {
+  color: #1E1E1E;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #0F4D3A;
+} */
 
