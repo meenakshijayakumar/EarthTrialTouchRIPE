@@ -12,6 +12,8 @@
   --text-white: #ffffff;
 
   --bs-accent-green: #0F4D3A;
+  --hero-light-green: #E6F4EC;   /* soft light green */
+
 }
 
 
@@ -217,10 +219,10 @@ ul {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url('../assets/imgs/Green_bg_1.jpg');
-  background-size: cover;
-  background-position: bottom right;
-  background-repeat: no-repeat;
+  background-color: var(--hero-light-green);
+
+  /* optional – keeps layout clean */
+  overflow: hidden;
 }
 
 
