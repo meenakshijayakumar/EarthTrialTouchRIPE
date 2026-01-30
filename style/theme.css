@@ -205,15 +205,12 @@ ul {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url('../assets/imgs/Green_bg_2.jpeg');
+  background-image: url('../assets/imgs/Green_bg_1.jpg');
   background-size: cover;
   background-position: bottom right;
   background-repeat: no-repeat;
 }
 
-#hero-section {
-  background-color: red;
-}
 
 
 .bg-blur {
@@ -986,14 +983,28 @@ section.visible {
   margin-top: 16px;
 }
 
-/* HERO COUNTER NUMBERS */
+/* =========================
+   HERO COUNTER – FINAL STYLE
+   ========================= */
+
+/* Counter background box */
+#counter-section {
+  background-color: var(--bs-accent-green);
+}
+
+/* Counter numbers */
 #counter-section .counter {
-  color: var(--bs-accent-green);
+  color: #ffffff;
 }
 
-
-/* HERO COUNTER LABELS */
+/* Counter labels */
 #counter-section p {
-  color: rgba(15, 77, 58, 0.8);
+  color: rgba(255, 255, 255, 0.85);
 }
+
+/* Vertical divider lines */
+#counter-section .number-counter:not(:last-child)::after {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
 
