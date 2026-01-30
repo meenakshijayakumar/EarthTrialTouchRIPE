@@ -204,6 +204,11 @@ ul {
   background-repeat: no-repeat;
 }
 
+#hero-section {
+  background-color: red;
+}
+
+
 .bg-blur {
   background: rgba(255, 255, 255, 0);
   backdrop-filter: blur(10px);
