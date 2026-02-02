@@ -1201,11 +1201,21 @@ h1, h2, h3, h4, h5, h6 {
 
 
 @keyframes dragPulse {
-  0% { opacity: 0.3; }
-  50% { opacity: 0.8; }
-  100% { opacity: 0.3; }
+  0%   { opacity: 0.3; transform: translateX(0); }
+  50%  { opacity: 0.8; transform: translateX(-6px); }
+  100% { opacity: 0.3; transform: translateX(0); }
 }
 
+
+.carousel-drag.right span {
+  animation: dragPulseRight 2s ease-in-out infinite;
+}
+
+@keyframes dragPulseRight {
+  0%   { opacity: 0.3; transform: translateX(0); }
+  50%  { opacity: 0.8; transform: translateX(6px); }
+  100% { opacity: 0.3; transform: translateX(0); }
+}
 
 /* =========================
    SIDE DRAG HINTS (MEDIA + TESTIMONIAL)
