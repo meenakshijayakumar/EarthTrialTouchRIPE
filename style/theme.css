@@ -1207,6 +1207,45 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* =========================
+   SIDE DRAG HINTS (MEDIA + TESTIMONIAL)
+   ========================= */
+
+#media,
+#testimonial {
+  position: relative;
+}
+
+.carousel-drag-hint {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  font-family: 'Neutral Face', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  color: var(--bs-accent-green);
+  opacity: 0.45;
+  pointer-events: none;
+  animation: dragPulse 2s ease-in-out infinite;
+  z-index: 5;
+}
+
+.carousel-drag-hint.left {
+  left: -10px;
+}
+
+.carousel-drag-hint.right {
+  right: -10px;
+}
+
+/* Hide on small screens (mobile already implies swipe) */
+@media (max-width: 768px) {
+  .carousel-drag-hint {
+    display: none;
+  }
+}
+
+
 .media-frame.video:hover::after {
   opacity: 1;
 }
