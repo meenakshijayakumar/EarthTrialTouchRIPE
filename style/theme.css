@@ -1155,6 +1155,36 @@ h1, h2, h3, h4, h5, h6 {
   transition: opacity 0.3s ease;
 }
 
+
+
+/* =========================
+   CAROUSEL DRAG HINT
+   ========================= */
+
+.carousel-hint {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+  margin-bottom: 24px;
+  pointer-events: none;
+}
+
+.carousel-hint span {
+  font-family: 'Neutral Face', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  color: var(--bs-accent-green);
+  opacity: 0.6;
+  animation: dragPulse 2s ease-in-out infinite;
+}
+
+@keyframes dragPulse {
+  0% { opacity: 0.3; }
+  50% { opacity: 0.8; }
+  100% { opacity: 0.3; }
+}
+
+
 .media-frame.video:hover::after {
   opacity: 1;
 }
