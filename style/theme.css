@@ -1277,9 +1277,7 @@ h1, h2, h3, h4, h5, h6 {
    MEDIA CAROUSEL SIDE DRAG
    ========================= */
 
-.media-carousel-wrapper {
-  position: relative;
-}
+
 
 /* shared drag style */
 .carousel-drag.side {
@@ -1302,15 +1300,7 @@ h1, h2, h3, h4, h5, h6 {
   animation: dragPulse 2s ease-in-out infinite;
 }
 
-/* LEFT side – hugs first card */
-.carousel-drag.left {
-  left: -48px;   /* adjust: closer/farther from image */
-}
 
-/* RIGHT side – hugs last card */
-.carousel-drag.right {
-  right: -48px;
-}
 
 /* Hide on mobile (gesture already obvious) */
 @media (max-width: 768px) {
