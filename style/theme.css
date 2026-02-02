@@ -1207,53 +1207,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.carousel-drag.right span {
-  animation: dragPulseRight 2s ease-in-out infinite;
-}
 
-@keyframes dragPulseRight {
-  0%   { opacity: 0.3; transform: translateX(0); }
-  50%  { opacity: 0.8; transform: translateX(6px); }
-  100% { opacity: 0.3; transform: translateX(0); }
-}
 
-/* =========================
-   SIDE DRAG HINTS (MEDIA + TESTIMONIAL)
-   ========================= */
 
-#media,
-#testimonial {
-  position: relative;
-}
 
-.carousel-drag-hint {
-  position: absolute;
-  top: 55%;
-  transform: translateY(-50%);
-  font-family: 'Neutral Face', sans-serif;
-  font-size: 0.75rem;
-  letter-spacing: 0.18em;
-  color: var(--bs-accent-green);
-  opacity: 0.45;
-  pointer-events: none;
-  animation: dragPulse 2s ease-in-out infinite;
-  z-index: 5;
-}
-
-.carousel-drag-hint.left {
-  left: -10px;
-}
-
-.carousel-drag-hint.right {
-  right: -10px;
-}
-
-/* Hide on small screens (mobile already implies swipe) */
-@media (max-width: 768px) {
-  .carousel-drag-hint {
-    display: none;
-  }
-}
 
 
 .media-frame.video:hover::after {
@@ -1273,39 +1230,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* =========================
-   MEDIA CAROUSEL SIDE DRAG
-   ========================= */
 
 
 
-/* shared drag style */
-.carousel-drag.side {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
-  z-index: 5;
-}
 
-.carousel-drag span {
-  font-family: 'Neutral Face', sans-serif;
-  font-size: 0.75rem;
-  letter-spacing: 0.18em;
-  color: var(--bs-accent-green);
-  opacity: 0.55;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  animation: dragPulse 2s ease-in-out infinite;
-}
-
-
-
-/* Hide on mobile (gesture already obvious) */
-@media (max-width: 768px) {
-  .carousel-drag.side {
-    display: none;
-  }
-}
 
