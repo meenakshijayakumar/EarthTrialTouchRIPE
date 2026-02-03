@@ -1319,3 +1319,48 @@ h1, h2, h3, h4, h5, h6 {
 #customers-testimonials .owl-item.active.center img {
   opacity: 1;
 }
+
+
+/* =========================
+   ENDORSEMENTS – FORCE LARGE SIZE
+   ========================= */
+
+/* Make each carousel item BIG */
+#customers-testimonials .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+
+/* Increase card size */
+#customers-testimonials .shadow-effect {
+  width: 520px;          /* 🔥 main control */
+  height: 520px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+/* Make image fill the card */
+#customers-testimonials img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Make center slide dominant */
+#customers-testimonials .owl-item.active.center {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Side slides visible but smaller */
+#customers-testimonials .owl-item {
+  opacity: 0.35;
+  transform: scale(0.75);
+  transition: all 0.4s ease;
+}
+
