@@ -1364,3 +1364,47 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.4s ease;
 }
 
+
+
+/* =========================
+   ENDORSEMENTS – FINAL FIX
+   ========================= */
+
+/* Override old testimonial image limit */
+#customers-testimonials .owl-item img {
+  max-width: none !important;
+}
+
+/* Proper card size */
+#customers-testimonials .shadow-effect {
+  width: 420px;
+  height: 420px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Make image behave correctly */
+#customers-testimonials img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* 🔥 IMPORTANT FIX */
+  border-radius: 18px;
+}
+
+/* Center item normal size */
+#customers-testimonials .owl-item.active.center {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Side items smaller & faded */
+#customers-testimonials .owl-item {
+  opacity: 0.35;
+  transform: scale(0.8);
+  transition: all 0.4s ease;
+}
