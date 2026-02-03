@@ -1284,3 +1284,38 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+/* =========================
+   ENDORSEMENTS – BIGGER IMAGES
+   ========================= */
+
+/* Increase image size */
+#testimonial img {
+  max-width: 360px;   /* try 320–420px */
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+/* Give the image more breathing room */
+#testimonial .shadow-effect {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Make center slide clearly larger */
+#customers-testimonials .owl-item.active.center img {
+  transform: scale(1.15);
+  opacity: 1;
+}
+
+/* Side slides slightly visible but smaller */
+#customers-testimonials .owl-item img {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0.4;
+}
+
+#customers-testimonials .owl-item.active.center img {
+  opacity: 1;
+}
