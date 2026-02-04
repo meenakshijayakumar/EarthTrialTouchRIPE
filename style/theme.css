@@ -1504,7 +1504,7 @@ h1, h2, h3, h4, h5, h6 {
    ========================= */
 
 #awards .about-us-img {
-  max-width: 420px;      /* 🔧 control image container size */
+  max-width: 350px;      /* 🔧 control image container size */
   margin: 0 auto;        /* center inside column */
 }
 
