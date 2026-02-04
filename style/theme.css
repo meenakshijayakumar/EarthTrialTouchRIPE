@@ -2883,38 +2883,32 @@ h1, h2, h3, h4, h5, h6 {
 } 
 
 
+
 /* =========================
    PRODUCTS – TALLER VIDEOS (CLEAR, NO CROP)
    ========================= */
 
 #about-us .about-us-img {
-  max-width: 480px;
-  height: 320px;              /* 🔥 INCREASE HEIGHT HERE */
+  max-width: 480px;       /* controls width */
   margin: 0 auto;
-  background: #000;
   border-radius: 16px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-/* Video */
+/* Videos: grow naturally, no crop */
 #about-us .about-us-img video {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;        /* ✅ full video visible */
-  border-radius: 16px;
-}
-
-/* Image (keep consistent) */
-#about-us .about-us-img img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: auto;           /* 🔥 key line */
   object-fit: contain;
   border-radius: 16px;
 }
 
+/* Images: keep consistent behavior */
+#about-us .about-us-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
+}
 
 
 
