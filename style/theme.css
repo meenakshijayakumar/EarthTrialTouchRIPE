@@ -1515,6 +1515,13 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 12px;   /* optional, matches theme */
 }
 
+/* FORCE smaller awards image */
+#awards .about-us-img img {
+  max-width: 320px !important;   /* 🔥 THIS is the key */
+  width: 100%;
+  height: auto;
+}
+
 
 /* =========================
    AWARDS TEXT ALIGNMENT
