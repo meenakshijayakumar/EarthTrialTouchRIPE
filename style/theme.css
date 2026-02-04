@@ -1557,17 +1557,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Proper card size */
+
 #customers-testimonials .shadow-effect {
   width: 420px;
-  height: 420px;
-  padding: 0;
+  padding: 20px 0;
   background: transparent;
   border: none;
   box-shadow: none;
+
   display: flex;
-  justify-content: center;
+  flex-direction: column;     /* 🔥 stack image + caption */
   align-items: center;
 }
+
 
 /* Make image behave correctly */
 #customers-testimonials img {
@@ -1589,6 +1591,18 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(0.8);
   transition: all 0.4s ease;
 }
+
+.endorsement-caption {
+  font-size: 1rem;
+  color: var(--text-main);
+  text-align: center;
+  max-width: 360px;
+  line-height: 1.4;
+}
+#customers-testimonials img {
+  margin-bottom: 12px;
+}
+
 
 /* =========================
    HERO VIDEO FIX
