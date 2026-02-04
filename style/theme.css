@@ -1344,27 +1344,37 @@ h1, h2, h3, h4, h5, h6 {
    MEDIA MODAL
    ========================= */
 
+
 .media-modal {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.9);
   display: none;
-  align-items: center;
-  justify-content: center;
+
+  /* 🔥 KEY FIX */
+  overflow-y: auto;     /* allow scrolling */
+  padding: 40px 20px;
+
   z-index: 9999;
 }
 
+
+
 .media-modal-content {
-  max-width: 90vw;
-  max-height: 90vh;
+  max-width: 95vw;
+  margin: 0 auto;
 }
+
+
 
 .media-modal img,
 .media-modal video {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: auto;           /* 🔥 critical */
   object-fit: contain;
+  display: block;
 }
+
 
 .media-close {
   position: absolute;
