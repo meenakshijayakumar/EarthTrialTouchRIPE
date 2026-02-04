@@ -1428,3 +1428,9 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
   border-radius: 12px; /* optional polish */
 }
+
+.products-grid video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
