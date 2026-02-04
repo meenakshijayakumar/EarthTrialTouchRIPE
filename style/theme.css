@@ -238,7 +238,7 @@ ul {
   background-color: var(--hero-light-green);
 
   /* optional – keeps layout clean */
-  overflow: hidden;
+  overflow: visible;
 }
 
 
@@ -832,8 +832,8 @@ footer .nav .nav-item {
 
 /* Add these new styles for section transitions */
 section {
-  opacity: 1;
-  transform: none;
+  opacity: 1 !important;
+  transform: none !important;
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
