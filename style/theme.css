@@ -1664,5 +1664,49 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* =========================
+   MEDIA MODAL – SHOW FULL IMAGE
+   ========================= */
+
+.media-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 40px;
+}
+
+/* Modal content wrapper */
+.media-modal-content {
+  max-width: 95vw;
+  max-height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FULL image visibility */
+.media-modal img,
+.media-modal video {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;   /* 🔥 THIS IS THE KEY */
+}
+
+/* Close button */
+.media-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  z-index: 10000;
+}
 
 
