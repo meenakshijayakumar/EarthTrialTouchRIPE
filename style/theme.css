@@ -238,7 +238,7 @@ ul {
   background-color: var(--hero-light-green);
 
   /* optional – keeps layout clean */
-  overflow: visible;
+  overflow: hidden;
 }
 
 
@@ -250,19 +250,10 @@ ul {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-#hero-section > .container {
-  position: relative;
-  z-index: 2;
-}
-
-
 #dustCanvas {
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;   /* 🔥 critical */
+  position: absolute;
+  z-index: 1;
 }
-
 
 #about-us,
 #awards,
@@ -832,8 +823,8 @@ footer .nav .nav-item {
 
 /* Add these new styles for section transitions */
 section {
-  opacity: 1 !important;
-  transform: none !important;
+  opacity: 0;
+  transform: translateY(20px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
@@ -1416,21 +1407,4 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.35;
   transform: scale(0.8);
   transition: all 0.4s ease;
-}
-
-
-.hero-media {
-  max-width: 65%;
-}
-
-.hero-media video {
-  width: 100%;
-  height: auto;
-  border-radius: 12px; /* optional polish */
-}
-
-.products-grid video {
-  width: 100%;
-  height: auto;
-  display: block;
 }
