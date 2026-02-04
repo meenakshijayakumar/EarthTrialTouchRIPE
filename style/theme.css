@@ -1427,4 +1427,26 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+/* =========================
+   PRODUCTS – IMAGE & VIDEO FIX
+   ========================= */
+
+/* Force same sizing for images & videos */
+#about-us .about-us-img {
+  width: 100%;
+  max-width: 360px;      /* same as your images */
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* Apply to BOTH img and video */
+#about-us .about-us-img img,
+#about-us .about-us-img video {
+  width: 100%;
+  height: 220px;         /* 🔥 key: fixes layout jump */
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
 
