@@ -1517,7 +1517,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* FORCE smaller awards image */
 #awards .about-us-img img {
-  max-width: 320px !important;   /* 🔥 THIS is the key */
+  max-width: 100px !important;   /* 🔥 THIS is the key */
   width: 100%;
   height: auto;
 }
