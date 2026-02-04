@@ -234,13 +234,10 @@ ul {
 #hero-section {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;   /* ✅ allow content growth */
   background-color: var(--hero-light-green);
-
-  /* optional – keeps layout clean */
-  overflow: hidden;
+  overflow: visible;  /* ✅ do NOT clip video */
 }
-
 
 
 .bg-blur {
@@ -250,10 +247,13 @@ ul {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+
 #dustCanvas {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
+  pointer-events: none;
 }
+
 
 #about-us,
 #awards,
@@ -1408,3 +1408,23 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(0.8);
   transition: all 0.4s ease;
 }
+
+/* =========================
+   HERO VIDEO FIX
+   ========================= */
+
+#hero-section .media-frame {
+  position: relative;
+  z-index: 3; /* ABOVE canvas */
+}
+
+#hero-section video {
+  display: block;
+}
+
+/* Remove play overlay for hero video */
+#hero-section .media-frame.video::after {
+  display: none;
+}
+
+
