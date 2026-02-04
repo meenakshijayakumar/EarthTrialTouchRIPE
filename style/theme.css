@@ -1503,12 +1503,18 @@ h1, h2, h3, h4, h5, h6 {
    AWARDS IMAGE SIZE FIX
    ========================= */
 
+#awards .about-us-img {
+  max-width: 420px;      /* 🔧 control image container size */
+  margin: 0 auto;        /* center inside column */
+}
+
 #awards .about-us-img img {
   width: 100%;
-  max-width: 380px;   /* adjust: 360–420px */
   height: auto;
-  display: block;
+  object-fit: contain;   /* no crop */
+  border-radius: 12px;   /* optional, matches theme */
 }
+
 
 /* =========================
    AWARDS TEXT ALIGNMENT
