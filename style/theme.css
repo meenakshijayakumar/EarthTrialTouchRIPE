@@ -2911,4 +2911,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* =========================
+   MEDIA PAGE – PER ITEM CONTROL
+   ========================= */
+
+/* Default media behaviour */
+#media .media-frame img,
+#media .media-frame video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 🎤 Person speaking – keep face visible */
+#media .media-person {
+  object-position: center top;
+}
+
+/* 📱 Instagram post – show full content */
+#media .media-instagram {
+  object-fit: contain;
+  background: #fff;   /* cleaner than black */
+}
+
+/* 🤖 Robot demo – slightly zoomed for clarity */
+#media .media-robot {
+  object-position: center;
+  transform: scale(1.05);
+}
 
