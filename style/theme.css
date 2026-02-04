@@ -1427,26 +1427,28 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+
 /* =========================
-   PRODUCTS – IMAGE & VIDEO FIX
+   PRODUCTS – SHOW FULL VIDEO (NO CROP)
    ========================= */
 
-/* Force same sizing for images & videos */
 #about-us .about-us-img {
-  width: 100%;
-  max-width: 360px;      /* same as your images */
+  max-width: 480px;     /* increase width */
   margin: 0 auto;
-  overflow: hidden;
-  border-radius: 12px;
 }
 
-/* Apply to BOTH img and video */
-#about-us .about-us-img img,
 #about-us .about-us-img video {
   width: 100%;
-  height: 220px;         /* 🔥 key: fixes layout jump */
-  object-fit: cover;
-  display: block;
-  border-radius: 12px;
+  height: auto;         /* 🔥 allows tall videos */
+  object-fit: contain;  /* 🔥 NO cropping */
+  border-radius: 16px;
+  background: #000;
+}
+
+/* Images stay normal */
+#about-us .about-us-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
