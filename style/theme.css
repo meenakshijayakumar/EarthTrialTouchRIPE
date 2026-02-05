@@ -1976,4 +1976,24 @@ section {
 }
 
 
+/* =========================
+   GLOBAL HEADING SPACING FIX
+   ========================= */
+
+/* Reduce space BEFORE every section heading */
+section .section-heading {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Control spacing ABOVE headings */
+section {
+  padding-top: 1.5rem !important;   /* 🔧 adjust: 1–2rem */
+}
+
+/* Ensure headings don’t inherit weird margins */
+section h3 {
+  margin-top: 0 !important;
+}
+
 
