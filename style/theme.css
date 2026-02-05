@@ -1801,3 +1801,19 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-2px);
 }
 
+/* =========================
+   RESEARCH PAPERS – TITLE CASE FIX
+   ========================= */
+
+#our-services .accordion-title {
+  font-family: 'Manrope', sans-serif !important;
+  text-transform: none !important;
+}
+
+#our-services .accordion-title {
+  font-family: 'Manrope', sans-serif !important;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-transform: none !important;
+}
