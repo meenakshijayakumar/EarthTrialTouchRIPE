@@ -1748,3 +1748,22 @@ h1, h2, h3, h4, h5, h6 {
 #portfolio p {
   margin-bottom: 1.2rem !important;
 }
+
+/* =========================
+   AWARDS – FORCE SMALL IMAGE
+   ========================= */
+
+#awards .about-us-img {
+  max-width: 360px;     /* 🔽 make it smaller */
+  margin: 0 auto;
+}
+
+#awards .about-us-img img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+
+  /* 🚫 kill global zoom effects */
+  transform: none !important;
+}
