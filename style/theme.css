@@ -1777,3 +1777,27 @@ h1, h2, h3, h4, h5, h6 {
 #our-services .accordion-title {
   text-transform: none !important;
 }
+
+/* =========================
+   CONTACT – LINKEDIN ICON
+   ========================= */
+
+.contact-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--bs-accent-green);
+  font-size: 20px;
+  border: 1px solid rgba(15, 77, 58, 0.3);
+  transition: all 0.3s ease;
+}
+
+.contact-social a:hover {
+  background-color: var(--bs-accent-green);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
