@@ -1882,3 +1882,15 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: contain !important;
 }
 
+.scroll-down {
+  bottom: 40px;   /* reduce from ~100px */
+}
+
+#about-us .section-heading {
+  margin-bottom: 20px;   /* reduce gap below heading */
+}
+
+#about-us h3 {
+  margin-bottom: 0 !important;
+}
+
