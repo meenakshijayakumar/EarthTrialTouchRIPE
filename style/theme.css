@@ -1865,3 +1865,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* =========================
+   PRODUCTS – FINAL OVERRIDE (THIS ONE WINS)
+   ========================= */
+
+/* Kill global 16:9 + cover for products ONLY */
+#about-us .media-frame {
+  aspect-ratio: unset !important;
+  height: 260px !important;   /* 👈 adjust 260–300 safely */
+}
+
+/* Let video grow vertically */
+#about-us .media-frame video {
+  height: 100% !important;
+  width: 100%;
+  object-fit: contain !important;
+}
+
