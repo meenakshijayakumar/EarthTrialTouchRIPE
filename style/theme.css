@@ -1946,3 +1946,34 @@ h1, h2, h3, h4, h5, h6 {
 #awards .section-heading {
   margin-top: 0 !important;
 }
+
+/* 🔧 GLOBAL: remove accidental gaps between sections */
+section {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+
+/* =========================
+   EVENTS – TIGHT TOP SPACING
+   ========================= */
+
+#portfolio {
+  padding-top: 1.5rem !important;
+}
+
+#portfolio .section-heading {
+  margin-top: 0 !important;
+  margin-bottom: 1.25rem !important;
+}
+
+
+
+/* Reduce bottom space after MEDIA */
+#media .about-us-info {
+  margin-bottom: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+
+
