@@ -1845,3 +1845,23 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 100%;
 }
 
+
+/* =========================
+   PRODUCTS – INCREASE VIDEO HEIGHT ONLY
+   (4 per row, no layout change)
+   ========================= */
+
+/* Override global 16:9 ONLY for products */
+#about-us .media-frame {
+  aspect-ratio: auto;        /* 🔥 remove height lock */
+  height: 260px;             /* 🔥 controls video length */
+}
+
+/* Make video fill the taller frame */
+#about-us .media-frame video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;       /* no crop */
+}
+
+
