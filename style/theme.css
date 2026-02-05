@@ -824,7 +824,6 @@ footer .nav .nav-item {
 /* Add these new styles for section transitions */
 section {
   opacity: 0;
-  transform: translateY(20px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
@@ -1938,3 +1937,12 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 0 !important;
 }
 
+/* FINAL FIX: tighten space before AWARDS */
+#awards {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+#awards .section-heading {
+  margin-top: 0 !important;
+}
