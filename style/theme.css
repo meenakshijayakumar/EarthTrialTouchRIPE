@@ -1500,27 +1500,21 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* =========================
-   AWARDS IMAGE SIZE FIX
+   AWARDS – IMAGE SIZE (FINAL)
    ========================= */
 
 #awards .about-us-img {
-  max-width: 350px;      /* 🔧 control image container size */
-  margin: 0 auto;        /* center inside column */
+  max-width: 520px;        /* 🔧 controls overall image width */
+  margin: 0 auto;          /* centers in column */
 }
 
 #awards .about-us-img img {
   width: 100%;
   height: auto;
-  object-fit: contain;   /* no crop */
-  border-radius: 12px;   /* optional, matches theme */
+  object-fit: contain;     /* no cropping */
+  border-radius: 16px;
 }
 
-/* FORCE smaller awards image */
-#awards .about-us-img img {
-  max-width: 100px !important;   /* 🔥 THIS is the key */
-  width: 100%;
-  height: auto;
-}
 
 
 /* =========================
