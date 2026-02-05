@@ -1894,3 +1894,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0 !important;
 }
 
+#awards {
+  padding-top: 20px;   /* override section spacing */
+}
+
+#awards .section-heading {
+  margin-bottom: 16px;
+}
+
+#awards h3 {
+  margin-top: 0 !important;
+}
