@@ -1817,3 +1817,31 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: normal;
   text-transform: none !important;
 }
+
+/* =========================
+   PRODUCTS – OPTION B (4 per row, bigger cards)
+   ========================= */
+
+/* Make product cards taller & roomier */
+#about-us .about-us-content {
+  padding: 32px;
+}
+
+/* Remove 16:9 lock ONLY for products */
+#about-us .media-frame {
+  aspect-ratio: unset;      /* 🔥 key line */
+  min-height: 320px;        /* controls box height */
+}
+
+/* Let videos fill height naturally */
+#about-us .media-frame video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;      /* no crop */
+}
+
+/* Make product videos feel more dominant */
+#about-us .about-us-img {
+  max-width: 100%;
+}
+
