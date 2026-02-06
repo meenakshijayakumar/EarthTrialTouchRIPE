@@ -2151,3 +2151,49 @@ section .section-heading h3 {
   min-height: 320px;
   background: black;
 }
+
+
+
+/* =========================
+   FINAL FIX: REMOVE BLACK CONTAINERS
+   ========================= */
+
+/* Kill fixed boxes everywhere */
+.media-frame {
+  height: auto !important;
+  aspect-ratio: unset !important;
+  background: transparent !important;
+  overflow: visible !important;
+}
+
+/* Let videos behave naturally */
+.media-frame video,
+.media-frame img {
+  width: 100%;
+  height: auto !important;
+  object-fit: contain !important;
+  background: transparent !important;
+  display: block;
+}
+
+/* Products section: NO cropping */
+#about-us .media-frame video {
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+/* Media carousel: still looks clean */
+#media .media-frame video,
+#media .media-frame img {
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+/* Modal: no fake black box */
+.media-modal video {
+  min-height: unset !important;
+  background: transparent !important;
+}
+
+
+
