@@ -2076,7 +2076,7 @@ section .section-heading h3 {
    ========================= */
 
 #awards .about-us-img {
-  max-width: 600px;     /* ← change this freely */
+  max-width: 300px;     /* ← change this freely */
   width: 100%;
   margin: 0 auto;
 }
