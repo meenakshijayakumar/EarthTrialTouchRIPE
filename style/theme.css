@@ -2196,4 +2196,24 @@ section .section-heading h3 {
 }
 
 
+/* =========================
+   PRODUCTS – REMOVE INVISIBLE CONTAINERS
+   ========================= */
+
+#about-us .media-frame {
+  height: auto !important;        /* 🔥 remove fixed height */
+  min-height: 0 !important;
+  aspect-ratio: unset !important; /* 🔥 kill 16:9 lock */
+  background: transparent;        /* no fake box */
+  padding: 0;
+}
+
+/* Let media size itself naturally */
+#about-us .media-frame video,
+#about-us .media-frame img {
+  width: 100%;
+  height: auto;                   /* 🔥 THIS is key */
+  object-fit: contain;
+  display: block;
+}
 
