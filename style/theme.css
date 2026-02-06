@@ -2242,3 +2242,32 @@ section .section-heading h3 {
   height: auto;
   object-fit: contain;
 }
+
+/* =========================
+   MOVE AWARDS HEADING UP
+   ========================= */
+
+/* Reduce space AFTER products */
+#about-us {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Kill extra gap before AWARDS */
+#awards {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Pull the heading itself upward */
+#awards .section-heading {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  margin-bottom: 1.25rem !important;
+}
+
+/* Ensure no hidden transform spacing */
+#awards {
+  transform: none !important;
+}
+
