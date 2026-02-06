@@ -2063,3 +2063,11 @@ section h3 {
   z-index: 2;
 }
 
+/* =========================
+   EVENTS – heading spacing
+   ========================= */
+
+#portfolio .section-heading {
+  margin-bottom: 2.25rem !important;  /* adjust 2–3rem if needed */
+}
+
