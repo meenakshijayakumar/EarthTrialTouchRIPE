@@ -734,7 +734,7 @@ ul {
 
 #customers-testimonials .item {
   padding: 10px 10px;
-  margin-bottom: 80px;
+  margin-bottom: 0;
   opacity: .2;
   -webkit-transform: scale3d(0.8, 0.8, 1);
   transform: scale3d(0.8, 0.8, 1);
@@ -1566,7 +1566,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #customers-testimonials .shadow-effect {
   width: 420px;
-  padding: 20px 0;
+  padding: 32px 0;
   background: transparent;
   border: none;
   box-shadow: none;
@@ -2019,3 +2019,47 @@ section h3 {
 #customers-testimonials .item {
   margin-bottom: 32px;   /* was 80px */
 }
+
+
+/* FIX 1: Prevent testimonials from inflating section height */
+#customers-testimonials {
+  overflow: hidden;
+}
+
+#our-services {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* =========================
+   REAL SPACING FIX (FINAL)
+   ========================= */
+
+/* Prevent Owl Carousel from inflating layout height */
+#customers-testimonials {
+  overflow: hidden;
+}
+
+/* Remove layout-breaking margin */
+#customers-testimonials .item {
+  margin-bottom: 0;
+}
+
+/* Keep visual spacing INSIDE cards only */
+#customers-testimonials .shadow-effect {
+  padding-bottom: 32px;
+}
+
+/* Collapse endorsements section bottom */
+#testimonial {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Ensure Research Papers starts immediately */
+#our-services {
+  position: relative;
+  z-index: 2;
+}
+
