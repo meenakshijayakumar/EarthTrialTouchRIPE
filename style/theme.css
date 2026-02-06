@@ -1384,25 +1384,7 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 
-/* =========================
-   MEDIA FRAME (uniform size)
-   ========================= */
 
-.media-frame {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  border-radius: 12px;
-  position: relative;
-  cursor: pointer;
-}
-
-.media-frame img,
-.media-frame video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 /* =========================
    PLAY ICON (hover)
@@ -2155,116 +2137,27 @@ section .section-heading h3 {
 
 
 /* =========================
-   FINAL FIX: REMOVE BLACK CONTAINERS
-   ========================= */
-
-/* Kill fixed boxes everywhere */
-.media-frame {
-  height: auto !important;
-  aspect-ratio: unset !important;
-  background: transparent !important;
-  overflow: visible !important;
-}
-
-/* Let videos behave naturally */
-.media-frame video,
-.media-frame img {
-  width: 100%;
-  height: auto !important;
-  object-fit: contain !important;
-  background: transparent !important;
-  display: block;
-}
-
-/* Products section: NO cropping */
-#about-us .media-frame video {
-  height: auto !important;
-  object-fit: contain !important;
-}
-
-/* Media carousel: still looks clean */
-#media .media-frame video,
-#media .media-frame img {
-  height: auto !important;
-  object-fit: contain !important;
-}
-
-/* Modal: no fake black box */
-.media-modal video {
-  min-height: unset !important;
-  background: transparent !important;
-}
-
-
-/* =========================
-   PRODUCTS – REMOVE INVISIBLE CONTAINERS
-   ========================= */
-
-#about-us .media-frame {
-  height: auto !important;        /* 🔥 remove fixed height */
-  min-height: 0 !important;
-  aspect-ratio: unset !important; /* 🔥 kill 16:9 lock */
-  background: transparent;        /* no fake box */
-  padding: 0;
-}
-
-/* Let media size itself naturally */
-#about-us .media-frame video,
-#about-us .media-frame img {
-  width: 100%;
-  height: auto;                   /* 🔥 THIS is key */
-  object-fit: contain;
-  display: block;
-}
-
-/* =========================
-   MEDIA – FORCE UNIFORM SIZE (FINAL FIX)
-   ========================= */
-
-#media .media-frame {
-  width: 100%;
-  height: 220px;            /* 👈 match the third video */
-  aspect-ratio: unset !important;
-  background: #000;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-/* Force ALL media to behave identically */
-#media .media-frame video,
-#media .media-frame img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;       /* 👈 same crop everywhere */
-  display: block;
-}
-
-
-
-/* =========================
-   FINAL MEDIA & PRODUCT FIX
+   FINAL, CLEAN MEDIA FIX (ONLY ONE)
    ========================= */
 
 /* ---------- PRODUCTS (natural, no crop) ---------- */
 #about-us .media-frame {
   height: auto;
-  aspect-ratio: unset;
   background: transparent;
-  overflow: visible;
 }
 
 #about-us .media-frame video,
 #about-us .media-frame img {
   width: 100%;
   height: auto;
-  object-fit: contain;   /* NO crop */
+  object-fit: contain;
   display: block;
 }
 
 /* ---------- MEDIA (uniform cards) ---------- */
 #media .media-frame {
-  height: 220px;         /* 👈 SAME SIZE FOR ALL */
   width: 100%;
+  height: 220px;        /* change to 240px if you want taller */
   background: #000;
   border-radius: 12px;
   overflow: hidden;
@@ -2274,7 +2167,7 @@ section .section-heading h3 {
 #media .media-frame img {
   width: 100%;
   height: 100%;
-  object-fit: cover;     /* consistent crop */
+  object-fit: cover;   /* THIS is what makes them same size */
   display: block;
 }
 
@@ -2285,4 +2178,3 @@ section .section-heading h3 {
   max-height: 100%;
   object-fit: contain;
 }
-
