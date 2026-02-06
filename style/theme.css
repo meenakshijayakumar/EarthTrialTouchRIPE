@@ -2129,3 +2129,15 @@ section .section-heading h3 {
   line-height: 1;
 }
 
+/* Force Font Awesome Brand font */
+.fab {
+  font-family: "Font Awesome 6 Brands" !important;
+  font-weight: 400;
+}
+
+.contact-social i {
+  color: #ffffff;
+  font-size: 22px;
+  opacity: 1;
+}
+
