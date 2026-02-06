@@ -2205,3 +2205,40 @@ section .section-heading h3 {
 }
 
 
+/* =========================
+   PRODUCTS – 2 PER ROW
+   ========================= */
+
+/* Force 2 products per row on desktop */
+#about-us .col-xl-3 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+/* Tablet: still 2 per row */
+@media (max-width: 992px) {
+  #about-us .col-xl-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* Mobile: 1 per row */
+@media (max-width: 576px) {
+  #about-us .col-xl-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* PRODUCTS – make videos feel bigger */
+#about-us .media-frame {
+  height: auto;
+}
+
+#about-us .media-frame video,
+#about-us .media-frame img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
