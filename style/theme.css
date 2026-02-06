@@ -1749,24 +1749,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.2rem !important;
 }
 
-/* =========================
-   AWARDS – FORCE SMALL IMAGE
-   ========================= */
-
-#awards .about-us-img {
-  max-width: 360px;     /* 🔽 make it smaller */
-  margin: 0 auto;
-}
-
-#awards .about-us-img img {
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-
-  /* 🚫 kill global zoom effects */
-  transform: none !important;
-}
 
 
 /* =========================
@@ -2087,4 +2069,21 @@ section .section-heading {
 /* Ensure h3 itself adds no extra space */
 section .section-heading h3 {
   margin-bottom: 0 !important;
+}
+
+/* =========================
+   AWARDS – IMAGE WIDTH (FINAL)
+   ========================= */
+
+#awards .about-us-img {
+  max-width: 600px;     /* ← change this freely */
+  width: 100%;
+  margin: 0 auto;
+}
+
+#awards .about-us-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transform: none;     /* kill zoom effects */
 }
