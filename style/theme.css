@@ -1710,6 +1710,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 40px;
 }
 
+.media-modal video {
+  min-height: 300px;   /* 🔥 prevents zero-height paint */
+}
+
 /* Modal content wrapper */
 .media-modal-content {
   max-width: 95vw;
