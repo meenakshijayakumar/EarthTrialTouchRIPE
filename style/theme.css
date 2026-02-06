@@ -2099,7 +2099,7 @@ section .section-heading h3 {
 }
 
 #awards .about-us-img img {
-  height: 260px;            /* 👈 controls vertical size */
+  height: 340px;            /* 👈 controls vertical size 260 */
   width: auto;              /* 🔥 allows sideways growth */
   max-width: 100%;
   object-fit: contain;      /* no crop */
