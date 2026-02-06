@@ -1444,7 +1444,12 @@ Brix Prediction in Cucumbers
   const modal = document.getElementById("mediaModal");
   const modalImg = document.getElementById("modalImage");
   const modalVideo = document.getElementById("modalVideo");
+  
   const closeBtn = document.querySelector(".media-close");
+
+  modalVideo.addEventListener("click", e => e.stopPropagation());
+modalImg.addEventListener("click", e => e.stopPropagation());
+
 
   document.querySelectorAll(".media-frame").forEach(frame => {
     frame.addEventListener("click", () => {
@@ -1477,11 +1482,20 @@ setTimeout(() => {
     });
   });
 
+
+
+  
   closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-    modalVideo.pause();
-    modalVideo.src = "";
-  });
+  modal.style.display = "none";
+
+  // stop & reset video
+  modalVideo.pause();
+  modalVideo.removeAttribute("src");
+  modalVideo.load();
+
+  // clear image
+  modalImg.removeAttribute("src");
+});
 
   modal.addEventListener("click", e => {
     if (e.target === modal) closeBtn.click();
