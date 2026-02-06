@@ -2271,3 +2271,37 @@ section .section-heading h3 {
   transform: none !important;
 }
 
+
+/* ==================================================
+   GLOBAL SECTION SPACING — MATCH EVENTS ↔ ENDORSEMENTS
+   ================================================== */
+
+/* 1. Normalize ALL sections */
+section {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* 2. Normalize spacing under every section heading */
+section .section-heading {
+  margin-bottom: 1.25rem !important;  /* same visual rhythm */
+}
+
+/* 3. Kill stray top margins on headings */
+section h3 {
+  margin-top: 0 !important;
+}
+
+/* 4. Remove section-specific padding inflation */
+#about-us,
+#awards,
+#media,
+#portfolio,
+#testimonial,
+#our-services,
+#get-in-touch {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
