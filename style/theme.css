@@ -2217,3 +2217,24 @@ section .section-heading h3 {
   display: block;
 }
 
+/* =========================
+   MEDIA – FORCE UNIFORM SIZE (FINAL FIX)
+   ========================= */
+
+#media .media-frame {
+  width: 100%;
+  height: 220px;            /* 👈 match the third video */
+  aspect-ratio: unset !important;
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Force ALL media to behave identically */
+#media .media-frame video,
+#media .media-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* 👈 same crop everywhere */
+  display: block;
+}
