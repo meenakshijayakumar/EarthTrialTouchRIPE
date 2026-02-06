@@ -2201,5 +2201,7 @@ section .section-heading h3 {
 
 /* PRODUCTS: reduce gap between media and caption */
 #about-us .about-us-text {
-  margin-top: 6px !important;   /* try 4–8px */
+  margin-top: 3px !important;   /* try 4–8px */
 }
+
+
