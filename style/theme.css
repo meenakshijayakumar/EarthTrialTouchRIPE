@@ -2087,3 +2087,22 @@ section .section-heading h3 {
   object-fit: contain;
   transform: none;     /* kill zoom effects */
 }
+
+/* =========================
+   AWARDS – FAT IMAGE (SIDEWAYS STRETCH)
+   ========================= */
+
+#awards .about-us-img {
+  width: 100%;
+  max-width: none;          /* 🔥 important */
+  margin: 0 auto;
+}
+
+#awards .about-us-img img {
+  height: 260px;            /* 👈 controls vertical size */
+  width: auto;              /* 🔥 allows sideways growth */
+  max-width: 100%;
+  object-fit: contain;      /* no crop */
+  display: block;
+  margin: 0 auto;
+}
