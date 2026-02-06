@@ -2145,3 +2145,9 @@ section .section-heading h3 {
   opacity: 1;
 }
 
+
+/* Modal videos black screen fix */
+.media-modal video {
+  min-height: 320px;
+  background: black;
+}
