@@ -2198,3 +2198,8 @@ section .section-heading h3 {
   object-fit: contain !important;
   display: block;
 }
+
+/* PRODUCTS: reduce gap between media and caption */
+#about-us .about-us-text {
+  margin-top: 6px !important;   /* try 4–8px */
+}
