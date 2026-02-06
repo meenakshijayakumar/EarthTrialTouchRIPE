@@ -110,15 +110,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
       modalContent.innerHTML = "";
 
-      if (type === "video") {
-        const video = document.createElement("video");
-        video.src = src;
-        video.controls = true;
-        video.autoplay = true;
-        video.style.maxWidth = "100%";
-        video.style.height = "auto";
-        modalContent.appendChild(video);
-      }
+        if (type === "video") {
+  const video = document.createElement("video");
+
+  video.src = src;
+  video.controls = true;
+  video.preload = "metadata";
+  video.playsInline = true;   // 🔥 critical for Safari / mobile
+  video.muted = false;
+
+  video.style.maxWidth = "100%";
+  video.style.maxHeight = "90vh";
+  video.style.background = "black";
+
+  modalContent.appendChild(video);
+
+  // 🔥 FORCE browser repaint before playing
+  setTimeout(() => {
+    video.load();
+    video.play().catch(err => console.warn("Autoplay blocked:", err));
+  }, 100);
+}
+
 
       if (type === "image") {
         const img = document.createElement("img");
@@ -131,19 +144,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Close modal
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-    modalContent.innerHTML = "";
-    document.body.style.overflow = "";
-  });
 
-  // Close on background click
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.style.display = "none";
-      modalContent.innerHTML = "";
-      document.body.style.overflow = "";
-    }
-  });
+    closeBtn.addEventListener("click", () => {
+  const video = modalContent.querySelector("video");
+  if (video) {
+    video.pause();
+    video.src = "";
+  }
+
+  modal.style.display = "none";
+  modalContent.innerHTML = "";
+  document.body.style.overflow = "";
 });
+
+ 
