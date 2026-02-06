@@ -1460,11 +1460,20 @@ Brix Prediction in Cucumbers
       }
 
       if (video) {
-        modalVideo.src = video.src;
-        modalVideo.style.display = "block";
-        modalImg.style.display = "none";
-        modalVideo.play();
+        modalVideo.pause();
+modalVideo.removeAttribute("src");
+modalVideo.load();
+
+modalVideo.src = video.src;
+modalVideo.style.display = "block";
+modalImg.style.display = "none";
+
+setTimeout(() => {
+  modalVideo.load();
+  modalVideo.play().catch(() => {});
+}, 100);
       }
+       
     });
   });
 
