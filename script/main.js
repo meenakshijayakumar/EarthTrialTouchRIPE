@@ -157,4 +157,17 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.style.overflow = "";
 });
 
- 
+ modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    const video = modalContent.querySelector("video");
+    if (video) {
+      video.pause();
+      video.src = "";
+    }
+
+    modal.style.display = "none";
+    modalContent.innerHTML = "";
+    document.body.style.overflow = "";
+  }
+});
+
