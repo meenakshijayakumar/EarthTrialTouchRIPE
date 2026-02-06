@@ -1997,3 +1997,25 @@ section h3 {
 }
 
 
+/* FIX: Research Papers – remove extra top spacing */
+#our-services {
+  padding-top: 0 !important;
+}
+
+#our-services .our-services-content {
+  padding-top: 0 !important;
+}
+
+/* FIX: Endorsements – reduce bottom gap */
+#testimonial {
+  padding-bottom: 0 !important;
+}
+
+#testimonial .testimonial-container {
+  padding-bottom: 0 !important;
+}
+
+/* Reduce fake gap created by carousel items */
+#customers-testimonials .item {
+  margin-bottom: 32px;   /* was 80px */
+}
