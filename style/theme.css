@@ -2178,3 +2178,23 @@ section .section-heading h3 {
   max-height: 100%;
   object-fit: contain;
 }
+
+/* PRODUCTS: remove fake play button */
+#about-us .media-frame.video::after {
+  display: none !important;
+}
+
+
+/* PRODUCTS: remove black container boxes */
+#about-us .media-frame {
+  height: auto !important;
+  background: transparent !important;
+  overflow: visible !important;
+}
+/* PRODUCTS: natural video size, no crop */
+#about-us .media-frame video {
+  width: 100%;
+  height: auto !important;
+  object-fit: contain !important;
+  display: block;
+}
