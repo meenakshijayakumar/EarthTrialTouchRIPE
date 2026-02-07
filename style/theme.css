@@ -2425,6 +2425,32 @@ section h3 {
 
 
 
+/* =========================================
+   FIX: MEDIA → EVENTS GAP (FINAL)
+   ========================================= */
+
+/* Kill extra height created by Owl Carousel */
+#media .owl-stage-outer {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Reduce bottom of MEDIA section */
+#media {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Tighten top of EVENTS section */
+#portfolio {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Control space under EVENTS heading */
+#portfolio .section-heading {
+  margin-bottom: 1rem !important;
+}
 
 
 
