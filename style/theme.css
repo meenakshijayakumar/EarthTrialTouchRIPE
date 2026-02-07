@@ -2412,3 +2412,14 @@ section h3 {
   padding-top: 0 !important;
 }
 
+
+/* =========================
+   FORCE EVENTS TO MOVE UP
+   ========================= */
+
+/* Override global section padding ONLY for EVENTS */
+#portfolio {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
