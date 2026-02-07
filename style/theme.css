@@ -2394,3 +2394,20 @@ section h3 {
   padding-bottom: 0 !important;
   margin-bottom: 0 !important;
 }
+
+/* =========================
+   FINAL: AWARDS TOP SPACING
+   ========================= */
+
+/* Do NOT move the whole section */
+#awards {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Move ONLY the AWARDS heading upward */
+#awards .section-heading {
+  margin-top: -20px !important;   /* 🔧 change -15 to -30 */
+  padding-top: 0 !important;
+}
+
