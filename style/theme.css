@@ -2354,3 +2354,9 @@ section h3 {
   margin-top: 0 !important;
 }
 
+/* ===== FORCE REDUCE SPACE ABOVE AWARDS ===== */
+#awards {
+  padding-top: 0 !important;
+  margin-top: -40px !important; /* 🔧 adjust: -20 to -60 */
+}
+
