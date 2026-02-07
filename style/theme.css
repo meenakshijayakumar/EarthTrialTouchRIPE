@@ -2422,3 +2422,27 @@ section h3 {
   padding-top: 0 !important;
   margin-top: 0 !important;
 }
+
+
+
+
+
+
+
+
+
+/* This targets the Media section container */
+#media {
+  padding-bottom: 20px !important; /* Reduces the inner bottom space */
+  margin-bottom: 0 !important;    /* Removes any outer bottom space */
+}
+/* This targets the Events section container */
+#events {
+  padding-top: 10px !important;  /* Brings the content/heading closer to the top */
+  margin-top: 0 !important;      /* Ensures no extra gap outside the section */
+}
+
+/* This targets the specific heading inside Events */
+#events .section-heading {
+  margin-top: 0 !important;      /* Removes the default gap above the 'EVENTS' text */
+}
