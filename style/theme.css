@@ -2200,6 +2200,15 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+
+
+
+
+
+
+
+
+
 /* 4. Remove section-specific padding inflation */
 #about-us,
 #awards,
@@ -2208,20 +2217,9 @@ h1, h2, h3, h4, h5, h6 {
 #testimonial,
 #our-services,
 #get-in-touch {
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* =========================
@@ -2340,5 +2338,20 @@ h1, h2, h3, h4, h5, h6 {
 /* 6. Global heading spacing (single source of truth) */
 section .section-heading {
   margin-bottom: 1rem !important;
+}
+
+
+/* =========================================
+   FINAL MICRO SPACING TWEAKS (SAFE)
+   ========================================= */
+
+/* Reduce space ABOVE Events */
+#portfolio {
+  padding-top: 0.25rem !important;
+}
+
+/* Reduce space BELOW Media */
+#media {
+  padding-bottom: 0.25rem !important;
 }
 
