@@ -2328,3 +2328,29 @@ section .section-heading {
 section h3 {
   margin-top: 0 !important;
 }
+
+
+/* ==================================================
+   SECTION-TO-SECTION SPACING (EXCEPT HERO)
+   ================================================== */
+
+/* Reduce space ABOVE every section EXCEPT the first one */
+section:not(#hero-section) {
+  padding-top: 0.75rem !important;
+}
+
+/* Reduce space BELOW every section */
+section {
+  padding-bottom: 0.75rem !important;
+}
+
+/* Tighten spacing below section headings */
+section .section-heading {
+  margin-bottom: 0.75rem !important;
+}
+
+/* Ensure headings don’t push content down */
+section h3 {
+  margin-top: 0 !important;
+}
+
