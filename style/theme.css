@@ -821,17 +821,6 @@ footer .nav .nav-item {
   font-size: 0.825rem;
 }
 
-/* Add these new styles for section transitions */
-section {
-  opacity: 0;
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 
 
 /* =========================
@@ -1331,12 +1320,6 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.03);
 }
 
-/*
-#media .media-frame img,
-#media .media-frame video {
-  transform: scale(1.05);
-}
-*/
 
 
 #media .media-frame img,
@@ -1871,13 +1854,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0 !important;
 }
 
-#awards {
-  padding-top: 20px;   /* override section spacing */
-}
 
-#awards .section-heading {
-  margin-bottom: 16px;
-}
+
+
 
 #awards h3 {
   margin-top: 0 !important;
@@ -1905,46 +1884,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-#awards .section-heading {
-  margin-top: 0 !important;
-  margin-bottom: 12px !important;
-}
+
 
 #awards h3 {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
 
-/* FINAL FIX: tighten space before AWARDS */
-#awards {
-  padding-top: 0 !important;
-  margin-top: 0 !important;
-}
 
-#awards .section-heading {
-  margin-top: 0 !important;
-}
 
-/* 🔧 GLOBAL: remove accidental gaps between sections */
-section {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-}
+
+
 
 
 /* =========================
    EVENTS – TIGHT TOP SPACING
    ========================= */
 
-#portfolio {
-  padding-top: 0.25rem !important;
-}
 
 
-#portfolio .section-heading {
-  margin-top: 0 !important;
-  margin-bottom: 1.25rem !important;
-}
+
+
 
 
 
@@ -1955,25 +1915,10 @@ section {
 }
 
 
-/* =========================
-   GLOBAL HEADING SPACING FIX
-   ========================= */
 
-/* Reduce space BEFORE every section heading */
-section .section-heading {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
 
-/* Control spacing ABOVE headings */
-section {
-  padding-top: 1.5rem !important;   /* 🔧 adjust: 1–2rem */
-}
 
-/* Ensure headings don’t inherit weird margins */
-section h3 {
-  margin-top: 0 !important;
-}
+
 
 
 /* FIX: Research Papers – remove extra top spacing */
@@ -2042,30 +1987,10 @@ section h3 {
   z-index: 2;
 }
 
-/* =========================
-   EVENTS – heading spacing
-   ========================= */
-
-#portfolio .section-heading {
-  margin-bottom: 2.25rem !important;  /* adjust 2–3rem if needed */
-}
 
 
 
-/* =========================
-   GLOBAL SECTION HEADING SPACING
-   (match ENDORSEMENTS)
-   ========================= */
 
-/* Same spacing under every section heading */
-section .section-heading {
-  margin-bottom: 1.5rem !important;  /* matches mt-4 */
-}
-
-/* Ensure h3 itself adds no extra space */
-section .section-heading h3 {
-  margin-bottom: 0 !important;
-}
 
 /* =========================
    AWARDS – IMAGE WIDTH (FINAL)
@@ -2263,18 +2188,8 @@ section .section-heading h3 {
   padding-bottom: 0 !important;
 }
 
-/* Kill extra gap before AWARDS */
-#awards {
-  padding-top: 0 !important;
-  margin-top: 0 !important;
-}
 
-/* Pull the heading itself upward */
-#awards .section-heading {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-  margin-bottom: 1.25rem !important;
-}
+
 
 /* Ensure no hidden transform spacing */
 #awards {
@@ -2282,27 +2197,8 @@ section .section-heading h3 {
 }
 
 
-/* ==================================================
-   GLOBAL SECTION SPACING — MATCH EVENTS ↔ ENDORSEMENTS
-   ================================================== */
 
-/* 1. Normalize ALL sections */
-section {
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-}
 
-/* 2. Normalize spacing under every section heading */
-section .section-heading {
-  margin-bottom: 1.25rem !important;  /* same visual rhythm */
-}
-
-/* 3. Kill stray top margins on headings */
-section h3 {
-  margin-top: 0 !important;
-}
 
 /* 4. Remove section-specific padding inflation */
 #about-us,
@@ -2317,62 +2213,16 @@ section h3 {
 }
 
 
-/* ==================================================
-   FINAL SECTION SPACING CONTROL (BEGINNER SAFE)
-   ================================================== */
-
-/* 1. Control spacing between ALL sections */
-section {
-  padding-top: 0.25rem !important;
-  padding-bottom: 0.25rem !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-/* 2. Control spacing BELOW section headings */
-section .section-heading {
-  margin-bottom: 0.5rem !important;
-}
-
-/* 3. Remove hidden top margins on headings */
-section h3 {
-  margin-top: 0 !important;
-}
 
 
-/* ==================================================
-   SECTION-TO-SECTION SPACING (EXCEPT HERO)
-   ================================================== */
 
-/* Reduce space ABOVE every section EXCEPT the first one */
-section:not(#hero-section) {
-  padding-top: 0.75rem !important;
-}
 
-/* Reduce space BELOW every section */
-section {
-  padding-bottom: 0.75rem !important;
-}
 
-/* Tighten spacing below section headings */
-section .section-heading {
-  margin-bottom: 0.75rem !important;
-}
 
-/* Ensure headings don’t push content down */
-section h3 {
-  margin-top: 0 !important;
-}
 
-/* ===== FORCE REDUCE SPACE ABOVE AWARDS ===== */
-#awards {
-  padding-top: 0 !important;
-}
 
-/* ✅ Move ONLY the AWARDS heading up (SAFE) */
-#awards .section-heading {
-  margin-top: -30px !important;   /* 🔧 try -20 to -40 */
-}
+
+
 
 /* =========================
    FIX: Reduce space AFTER PRODUCTS
@@ -2399,128 +2249,33 @@ section h3 {
   padding-bottom: 8px !important;
 }
 
-/* Tighten bottom of MEDIA section */
-#media {
-  padding-bottom: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-/* =========================
-   FINAL: AWARDS TOP SPACING
-   ========================= */
-
-/* Do NOT move the whole section */
-#awards {
-  padding-top: 0 !important;
-  margin-top: 0 !important;
-}
-
-/* Move ONLY the AWARDS heading upward */
-#awards .section-heading {
-  margin-top: -20px !important;   /* 🔧 change -15 to -30 */
-  padding-top: 0 !important;
-}
-
-
-/* =========================
-   FORCE EVENTS TO MOVE UP
-   ========================= */
-
-/* Override global section padding ONLY for EVENTS */
-#portfolio {
-  padding-top: 0 !important;
-  margin-top: 0 !important;
-}
-
-
-
-/* =========================================
-   FIX: MEDIA → EVENTS GAP (FINAL)
-   ========================================= */
-
-/* Kill extra height created by Owl Carousel */
-#media .owl-stage-outer {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-/* Reduce bottom of MEDIA section */
-#media {
-  padding-bottom: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-/* Tighten top of EVENTS section */
-#portfolio {
-  padding-top: 0 !important;
-  margin-top: 0 !important;
-}
-
-/* Control space under EVENTS heading */
-#portfolio .section-heading {
-  margin-bottom: 1rem !important;
-}
 
 
 
 
 
 
-/* This targets the Media section container */
-#media {
-  padding-bottom: 1px !important; /* Reduces the inner bottom space */
-  margin-bottom: 0 !important;    /* Removes any outer bottom space */
-}
-/* This targets the Events section container */
-#events {
-  padding-top: 1px !important;  /* Brings the content/heading closer to the top */
-  margin-top: 0 !important;      /* Ensures no extra gap outside the section */
-}
 
-/* This targets the specific heading inside Events */
-#events .section-heading {
-  margin-top: 0 !important;      /* Removes the default gap above the 'EVENTS' text */
-}
 
-/* =========================================
-   FIX: TIGHTEN SPACE BETWEEN MEDIA & EVENTS
-   ========================================= */
 
-/* 1. Remove bottom space from the Media section */
-#media {
-    padding-bottom: 0px !important;
-    margin-bottom: 0px !important;
-}
 
-/* 2. Remove top space from the Events section */
-/* Note: Your HTML uses id="portfolio" for the Events container */
-#portfolio {
-    padding-top: 0px !important;
-    margin-top: 0px !important;
-}
 
-/* 3. Remove the gap above the "EVENTS" text itself */
-#portfolio .section-heading {
-    margin-top: 0px !important;
-    padding-top: 10px !important; /* Adjust this 10px if you want it even closer */
-}
 
-/* FINAL: kill Owl Carousel bottom gap */
-#media .owl-stage-outer {
-  padding-bottom: 0 !important;
-  margin-bottom: 0 !important;
-}
 
-/* FINAL: tighten MEDIA → EVENTS spacing */
-#media {
-  padding-bottom: 0 !important;
-  margin-bottom: 0 !important;
-}
 
-#portfolio {
-  padding-top: 0 !important;
-  margin-top: 0 !important;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* FIX: Stop MEDIA carousel from inflating height */
 #media .owl-stage-outer {
@@ -2530,5 +2285,56 @@ section h3 {
 #media .owl-stage {
   display: flex;
   align-items: stretch;
+}
+
+
+/* =========================================
+   FINAL SECTION & GAP CONTROL (AUTHORITATIVE)
+   ========================================= */
+
+/* 1. Stop Owl Carousel from inflating Media height */
+#media .owl-stage-outer {
+  height: auto !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+#media .owl-stage {
+  display: flex;
+  align-items: stretch;
+}
+
+/* 2. Tighten Media section bottom */
+#media {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* 3. Tighten Events section top */
+#portfolio {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* 4. Clean Events heading spacing */
+#portfolio .section-heading {
+  margin-top: 0 !important;
+  margin-bottom: 1rem !important;
+}
+
+/* 5. Awards: move heading up (ONLY place this is done) */
+#awards {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+#awards .section-heading {
+  margin-top: -20px !important; /* tweak -15 to -30 if needed */
+  margin-bottom: 1rem !important;
+}
+
+/* 6. Global heading spacing (single source of truth) */
+section .section-heading {
+  margin-bottom: 1rem !important;
 }
 
