@@ -2423,3 +2423,68 @@ section h3 {
   margin-top: 0 !important;
 }
 
+/* ==================================================
+   FINAL SECTION SPACING AUTHORITY
+   (SAFE — overrides duplicates without deletion)
+   ================================================== */
+
+/* 1. Base spacing for all sections */
+section {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  margin: 0 !important;
+}
+
+/* 2. Section headings spacing */
+.section-heading {
+  margin-bottom: 1rem !important;
+}
+
+/* 3. Headings must not push content down */
+section h3 {
+  margin-top: 0 !important;
+}
+
+/* ==================================================
+   SECTION-SPECIFIC SPACING CONTROL
+   ================================================== */
+
+/* PRODUCTS → AWARDS */
+#about-us {
+  padding-bottom: 0.5rem !important;
+}
+
+/* AWARDS → MEDIA */
+#awards {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+/* MEDIA → EVENTS */
+#media {
+  padding-bottom: 0.5rem !important;
+}
+
+/* EVENTS section */
+#portfolio {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.75rem !important;
+}
+
+/* ENDORSEMENTS → RESEARCH */
+#testimonial {
+  padding-bottom: 0.5rem !important;
+}
+
+/* RESEARCH → CONTACT */
+#our-services {
+  padding-bottom: 0.5rem !important;
+}
+
+/* ==================================================
+   DO NOT AFFECT HERO
+   ================================================== */
+#hero-section {
+  padding-top: unset !important;
+  padding-bottom: unset !important;
+}
