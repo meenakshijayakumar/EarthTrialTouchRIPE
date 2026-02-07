@@ -2379,3 +2379,18 @@ section h3 {
   margin-bottom: 0 !important;
 }
 
+/* =========================
+   FIX: Reduce space AFTER MEDIA
+   ========================= */
+
+/* Reduce bottom spacing of media cards */
+#media .about-us-content {
+  margin-bottom: 12px !important;
+  padding-bottom: 12px !important;
+}
+
+/* Tighten bottom of MEDIA section */
+#media {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
