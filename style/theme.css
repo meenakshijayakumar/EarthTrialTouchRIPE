@@ -1928,8 +1928,9 @@ section {
    ========================= */
 
 #portfolio {
-  padding-top: 1.5rem !important;
+  padding-top: 0.5rem !important;
 }
+
 
 #portfolio .section-heading {
   margin-top: 0 !important;
