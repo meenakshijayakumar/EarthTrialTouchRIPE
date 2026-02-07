@@ -1,0 +1,2424 @@
+@import './fonts.css';
+@import './bootstrap.css';
+
+:root {
+  /* LIGHT GREEN THEME */
+  --bg-main: #E9F5EF;          /* page background */
+  --bg-soft: #DFF0E6;          /* cards / sections */
+  --bg-accent: #CFE8DB;        /* subtle contrast */
+
+  --text-main: #1E3B2F;        /* dark green text */
+  --text-muted: #4F6F62;
+  --text-white: #ffffff;
+
+  --bs-accent-green: #0F4D3A;
+  --hero-light-green: #CFE8DB;   /* soft light green */
+  --app-bg: #CFE8DB;
+
+}
+
+
+* {
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  background-color: var(--app-bg);
+  color: var(--text-main);
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.hero-title h1 {
+  font-family: 'Neutral Face', sans-serif;
+  font-weight: 800;
+  color: var(--bs-text-secondary-color);
+  background: linear-gradient(130deg, #eff1ff 30%, #121212 67%);
+  background-position: 50% 75%;
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0 !important;
+}
+
+.solution-title {
+  color: var(--bs-text-secondary-color);
+  background: linear-gradient(164deg, #eff1ff 40%, #121212 75%);
+  background-position: 50% 75%;
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  font-weight: 600;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0 !important;
+}
+
+.bg-theme-dark {
+  background-color: var(--bs-primary-color);
+}
+
+.bg-dark {
+  background-color: #000000 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Neutral Face', sans-serif;
+  color: var(--bs-text-secondary-color);
+  margin-bottom: 0 !important;
+}
+
+hr {
+  background-color: var(--bs-text-primary-color) !important;
+  opacity: 1 !important;
+  height: 2px !important;
+  border-radius: 10px;
+}
+
+hr:not([size]) {
+  height: 2px !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+p {
+  color: var(--text-muted);
+}
+
+
+p {
+  margin-bottom: 0 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-main);
+}
+
+.paragraph-quote {
+  font-size: 1.5rem;
+  color: var(--bs-text-secondary-color) !important;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.text-primary {
+  color: var(--bs-text-primary-color) !important;
+}
+
+.text-secondary {
+  color: var(--bs-text-secondary-color) !important;
+}
+
+.navbar {
+  padding: 0.25rem 0;
+}
+
+.nav-link {
+  font-size: 0.825rem;
+  font-family: 'Neutral Face', sans-serif;
+  color: var(--bs-text-primary-color) !important;
+  letter-spacing: normal;
+  transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.nav-item .active {
+  color: var(--bs-text-secondary-color) !important;
+}
+
+
+.navbar {
+  background-color: rgba(15, 77, 58, 0.18); /* darker than page */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  border-bottom: 1px solid rgba(15, 77, 58, 0.35);
+
+  box-shadow:
+    0 6px 20px rgba(15, 77, 58, 0.18),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.15);
+}
+
+
+
+.nav-link:hover {
+  color: var(--bs-accent-green) !important;
+}
+
+
+.theme-cta .arrow-icon {
+  margin-left: 8px;
+  rotate: -45deg;
+  transition: rotate 0.3s ease;
+}
+
+.theme-cta:hover .arrow-icon {
+  rotate: 0deg;
+}
+
+.logo-img {
+  max-width: 100px;
+  height: auto;
+}
+
+.btn {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.825rem;
+}
+
+.btn-fill-primary {
+  background-color: var(--bs-text-secondary-color) !important;
+  border: 0 !important;
+  padding: 10px 20px !important;
+  font-size: 1rem !important;
+  color: var(--bs-primary-color) !important;
+  transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+.btn-fill-primary:hover {
+  color: var(--bs-secondary-color) !important;
+}
+
+.btn-fill-primary .arrow-icon {
+  margin-left: 8px;
+  rotate: -45deg;
+  transition: rotate 0.3s ease;
+}
+
+.btn-fill-primary:hover .arrow-icon {
+  rotate: 0deg;
+}
+
+.btn-outline-light {
+  background-color: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: var(--bs-text-primary-color) !important;
+  transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: transparent !important;
+  color: var(--bs-text-secondary-color) !important;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.hero-heading {
+  font-size: 3.5rem;
+  color: var(--bs-accent-green);
+  text-shadow: 0 0 12px rgba(15, 77, 58, 0.4);
+}
+
+.hero-subheading {
+  font-size: 1.25rem;
+}
+
+.hero-title {
+  width: 90vw;
+}
+
+#hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;   /* ✅ allow content growth */
+  background-color: var(--hero-light-green);
+  overflow: visible;  /* ✅ do NOT clip video */
+}
+
+
+.bg-blur {
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+#dustCanvas {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+#about-us,
+#awards,
+#media,
+#IT-solution,
+#our-services,
+#get-in-touch,
+#portfolio,
+#testimonial {
+  background-color: var(--app-bg);
+}
+
+.section-heading {
+  max-width: 50vw;
+  margin: 0 auto;
+}
+
+#counter-section .couunter-container .number-counter {
+  position: relative;
+  padding: 5px;
+}
+
+#counter-section .couunter-container .number-counter:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  right: 0;
+  height: 50%;
+  width: 1px;
+  background-color: var(--bs-text-primary-color);
+}
+
+#counter-section .couunter-container {
+  display: flex;
+  align-items: center;
+}
+
+
+.card {
+  background-color: var(--bg-accent);
+  border: 1px solid rgba(15, 77, 58, 0.25);
+  border-radius: 12px !important;
+  padding: 40px 25px !important;
+  transition: border 0.3s ease;
+}
+
+.card:hover {
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+}
+
+.card hr {
+  width: 45% !important;
+}
+
+@media (max-width: 768px) {
+  #counter-section .couunter-container .number-counter {
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  #counter-section .couunter-container .number-counter:not(:last-child)::after {
+    display: none;
+    /* Remove vertical borders on smaller screens */
+  }
+
+  #counter-section .couunter-container {
+    flex-direction: column;
+  }
+}
+
+.accordion-button {
+  color: var(--bs-text-primary-color) !important;
+  background-color: transparent !important;
+  padding: 20px 10px !important;
+  transition: color 0.3s ease;
+  font-size: 1.25rem !important;
+}
+
+.accordion-button:focus {
+  border: 0 !important;
+  color: var(--bs-text-secondary-color) !important;
+  box-shadow: unset !important;
+}
+
+.accordion-button:hover {
+  color: var(--bs-text-secondary-color) !important;
+}
+
+.accordion-button svg {
+  fill: var(--bs-text-primary-color) !important;
+  transition: fill 0.3s ease;
+}
+
+.accordion-button:hover svg {
+  fill: var(--bs-text-secondary-color) !important;
+}
+
+.accordion-button .collapsed svg {
+  rotate: 0deg !important;
+  transition: rotate 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) svg {
+  rotate: 30deg !important;
+  transition: rotate 0.3s ease;
+}
+
+.accordion-item {
+  background-color: transparent !important;
+}
+
+.accordion-body {
+  padding: 1rem 10px !important;
+}
+
+.accordion-item:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.accordion-button::after {
+  flex-shrink: unset !important;
+  width: unset !important;
+  height: unset !important;
+  content: unset !important;
+  background-image: unset !important;
+  background-repeat: unset !important;
+  background-size: unset !important;
+  transition: unset !important;
+}
+
+
+.accordion-body-description {
+  width: 65vw;
+  border-left: 1px solid var(--bs-text-primary-color);
+  padding-left: 20px;
+}
+
+
+
+
+/* Styling for accordion-horizontal-scroll hover effect */
+.accordion-horizontal-scroll {
+  position: relative;
+}
+
+.accordion-horizontal-scroll:hover {
+  cursor: none;
+  /* Hide default cursor */
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: transparent;
+  rotate: -30deg;
+  border: 2px solid var(--bs-text-secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  pointer-events: none;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.accordion-horizontal-scroll:hover~.custom-cursor {
+  transform: scale(1);
+  z-index: 50;
+}
+
+.custom-cursor svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  z-index: 50;
+}
+
+
+.marquee-container {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.marquee {
+  display: flex;
+  animation: scroll 10s linear infinite;
+}
+
+.marquee span {
+  color: white;
+  font-size: 24px;
+  margin: 0 50px;
+  white-space: nowrap;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.gradient {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background: linear-gradient(to right, black, transparent 10%, transparent 90%, black);
+  pointer-events: none;
+}
+
+.scroll-down {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  bottom: 100px;
+  transform: translate(-50%, -50%);
+}
+
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  opacity: 0;
+  margin-top: 20px;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: var(--bs-accent-green);
+  box-shadow: 0 0 6px rgba(15, 77, 58, 0.45); /* subtle glow */
+}
+
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 40deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -40deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+
+
+.text {
+  display: block;
+  color: var(--bs-accent-green);
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0.6;
+  animation: pulse 2s linear alternate infinite;
+}
+
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+
+.swiper-heading {
+  margin: 0;
+  color: var(--bs-text-secondary-color);
+  transform: translateY(20px);
+  transition: all 0.4s ease 0.2s;
+  overflow: hidden;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 520px) {
+  .swiper-heading {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.swiper-desc {
+  color: var(--bs-text-primary-color);
+  transform: translateY(20px);
+  transition: all 0.4s ease 0.3s;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 520px) {
+  .swiper-desc {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slider-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-shrink: 0;
+  opacity: 0;
+}
+
+.slider-item-content {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.4s;
+}
+
+.slider-item-content>* {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.swiper-slide-active .slider-item-content>* {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.2s;
+}
+
+.slider-buttons {
+  position: absolute;
+  margin-top: 5rem;
+  display: flex;
+  top: 100%;
+  justify-content: center;
+  width: 100%;
+  padding-top: 8px;
+  gap: 15px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 35px;
+  border-radius: 50%;
+  height: 15px !important;
+  width: 15px !important;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: rgba(255, 255, 255, 0.6) !important;
+  position: relative !important;
+  scale: 0.6;
+}
+
+.swiper-button-next:before,
+.swiper-button-prev:before {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  height: 1px;
+  width: 0;
+  left: 0;
+  bottom: -1px;
+  transition: 0.2s;
+}
+
+.swiper-button-next:hover:before,
+.swiper-button-prev:hover:before {
+  background-color: rgba(255, 255, 255, 1) !important;
+}
+
+@media screen and (max-width: 520px) {
+
+  .swiper-button-next:hover:before,
+  .swiper-button-prev:hover:before {
+    display: none;
+  }
+}
+
+
+
+
+/* Owl Carousel for Testimonials */
+.shadow-effect {
+  min-height: 200px;
+  background: transparent;
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+
+.testimonial-person-name {
+  font-size: 1.5rem;
+  color: var(--bs-text-secondary-color);
+}
+
+.testimonial-company-name {
+  font-size: 0.825rem;
+  color: var(--bs-text-primary-color);
+}
+
+.testimonial-message {
+  color: var(--bs-text-secondary-color);
+}
+
+#customers-testimonials .item {
+  padding: 10px 10px;
+  margin-bottom: 0;
+  opacity: .2;
+  -webkit-transform: scale3d(0.8, 0.8, 1);
+  transform: scale3d(0.8, 0.8, 1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#customers-testimonials .owl-item.active.center .item {
+  opacity: 1;
+  -webkit-transform: scale3d(1.0, 1.0, 1);
+  transform: scale3d(1.0, 1.0, 1);
+}
+
+/*.owl-carousel .owl-item img {
+  transform-style: preserve-3d;
+  max-width: 150px;
+}*/
+
+#customers-testimonials .owl-item img {
+  max-width: 150px;
+}
+
+
+#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+#customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
+  background: #3190E7;
+  transform: translate3d(0px, -50%, 0px) scale(0.7);
+}
+
+#customers-testimonials.owl-carousel .owl-dots .owl-dot {
+  display: inline-block;
+}
+
+#customers-testimonials.owl-carousel .owl-dots .owl-dot span {
+  background: #3190E7;
+  display: inline-block;
+  height: 20px;
+  margin: 0 2px 5px;
+  transform: translate3d(0px, -50%, 0px) scale(0.3);
+  transform-origin: 50% 50% 0;
+  transition: all 250ms ease-out 0s;
+  width: 20px;
+}
+
+
+
+
+
+
+.address-container {
+  height: 180px;
+}
+
+
+
+
+
+
+.contact-form-container {
+  height: 100%;
+  padding: 3rem 2rem;
+  border: 1px solid var(--bs-text-secondary-color);
+}
+
+
+.form-control {
+  padding: 1rem 0.75rem !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  color: var(--bs-text-primary-color) !important;
+}
+
+.form-control:focus {
+  border: 0 !important;
+  color: var(--bs-text-primary-color) !important;
+  box-shadow: unset !important;
+}
+
+
+footer .nav .nav-item {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.825rem;
+}
+
+/* Add these new styles for section transitions */
+section {
+  opacity: 0;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+/* =========================
+   FIX: MEDIA carousel image size
+   ========================= */
+
+#about-us .owl-carousel .owl-item img {
+  max-width: none;      /* override 150px limit */
+  width: 100%;
+}
+
+/* MEDIA CAROUSEL IMAGE SIZE */
+.about-us-info .about-us-img img {
+  width: 100%;
+  max-width: 420px;   /* increase size */
+  margin: 0 auto;
+  display: block;
+}
+
+
+/* MEDIA CAROUSEL NAV ARROWS */
+.about-us-info .owl-nav {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.about-us-info .owl-nav button {
+  pointer-events: all;
+  background: transparent !important;
+  border: none;
+  position: absolute;
+}
+
+.about-us-info .media-prev,
+.about-us-info .media-next {
+  font-size: 48px;
+  color: #fff;
+}
+
+.about-us-info .owl-prev {
+  left: -50px;
+}
+
+.about-us-info .owl-next {
+  right: -50px;
+}
+
+
+/* MEDIA CAROUSEL ITEM SPACING */
+.about-us-info .owl-item {
+  padding: 0 15px;   /* visual breathing room */
+}
+
+/* MEDIA CAROUSEL IMAGE SIZE */
+.about-us-info .about-us-img img {
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* FORCE SPACE BETWEEN PRODUCT SLIDES */
+#about-us .owl-item {
+  padding: 0 20px;   /* THIS creates visible space */
+  box-sizing: border-box;
+}
+
+/* Make images big but not touching */
+#about-us .about-us-img img {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  display: block;
+}
+
+#about-us .about-us-img {
+  padding: 10px;
+}
+
+
+
+
+/* =========================
+   HERO COUNTER – FINAL STYLE
+   ========================= */
+
+/* Counter background box */
+#counter-section {
+  background-color: var(--bs-accent-green);
+}
+
+/* Counter numbers */
+#counter-section .counter {
+  color: #ffffff;
+}
+
+/* Counter labels */
+#counter-section p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Vertical divider lines */
+#counter-section .number-counter:not(:last-child)::after {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+/* LIGHT THEME TEXT FIX */
+/*
+body,
+p {
+  color: #1E1E1E;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #0F4D3A;
+} */
+
+
+
+
+
+/* =========================
+   PLAY ICON (hover)
+   ========================= */
+
+.media-frame.video::after {
+  content: "▶";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+  color: white;
+  background: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+
+/* =========================
+   CAROUSEL DRAG INDICATOR
+   ========================= */
+
+.carousel-hint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 18px 0 32px;
+  user-select: none;
+}
+
+.carousel-hint .drag-text {
+  font-family: 'Neutral Face', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  color: var(--bs-accent-green);
+  opacity: 0.6;
+}
+
+.carousel-hint .drag-arrow {
+  font-size: 28px;
+  color: var(--bs-accent-green);
+  opacity: 0.7;
+  animation: dragBounce 1.6s ease-in-out infinite;
+}
+
+.carousel-hint .drag-arrow.left {
+  animation-delay: 0s;
+}
+
+.carousel-hint .drag-arrow.right {
+  animation-delay: 0.8s;
+}
+
+@keyframes dragBounce {
+  0%   { transform: translateX(0); opacity: 0.4; }
+  50%  { transform: translateX(6px); opacity: 1; }
+  100% { transform: translateX(0); opacity: 0.4; }
+}
+
+
+@keyframes dragPulse {
+  0%   { opacity: 0.3; transform: translateX(0); }
+  50%  { opacity: 0.8; transform: translateX(-6px); }
+  100% { opacity: 0.3; transform: translateX(0); }
+}
+
+
+
+
+
+
+
+
+.media-frame.video:hover::after {
+  opacity: 1;
+}
+
+
+/* Cursor hint for draggable carousels */
+#media .owl-stage,
+#testimonial .owl-stage {
+  cursor: grab;
+}
+
+#media .owl-stage:active,
+#testimonial .owl-stage:active {
+  cursor: grabbing;
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   PRODUCTS – SHOW FULL VIDEO (NO CROP)
+   ========================= */
+
+#about-us .about-us-img {
+  max-width: 480px;     /* increase width */
+  margin: 0 auto;
+}
+
+#about-us .about-us-img video {
+  width: 100%;
+  height: auto;         /* 🔥 allows tall videos */
+  object-fit: contain;  /* 🔥 NO cropping */
+  border-radius: 16px;
+  background: #000;
+}
+
+/* Images stay normal */
+#about-us .about-us-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+
+
+/* =========================
+   MEDIA CAROUSEL ARROWS
+   ========================= */
+
+.owl-nav {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.owl-nav button {
+  pointer-events: all;
+  background: none !important;
+}
+
+.owl-nav .owl-prev {
+  position: absolute;
+  left: 10px;
+}
+
+.owl-nav .owl-next {
+  position: absolute;
+  right: 10px;
+}
+
+
+.carousel-nav {
+  font-size: 48px;
+  color: #ffffff;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-nav:hover {
+  opacity: 1;
+}
+
+.carousel-nav {
+  font-size: 56px;
+}
+
+
+/* =========================
+   MEDIA IMAGE SIZE
+   ========================= */
+
+.about-us-img img {
+  width: 100%;
+  max-width: 100%;
+  transform: scale(1.12);
+  transition: transform 0.3s ease;
+}
+
+.about-us-content:hover .about-us-img img {
+  transform: scale(1.18);
+}
+
+/* =========================
+   FIX: MEDIA carousel image size
+   ========================= */
+
+#about-us .owl-carousel .owl-item img {
+  max-width: none;      /* override 150px limit */
+  width: 100%;
+}
+
+/* MEDIA CAROUSEL IMAGE SIZE */
+.about-us-info .about-us-img img {
+  width: 100%;
+  max-width: 420px;   /* increase size */
+  margin: 0 auto;
+  display: block;
+}
+
+
+/* MEDIA CAROUSEL NAV ARROWS */
+.about-us-info .owl-nav {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.about-us-info .owl-nav button {
+  pointer-events: all;
+  background: transparent !important;
+  border: none;
+  position: absolute;
+}
+
+.about-us-info .media-prev,
+.about-us-info .media-next {
+  font-size: 48px;
+  color: #fff;
+}
+
+.about-us-info .owl-prev {
+  left: -50px;
+}
+
+.about-us-info .owl-next {
+  right: -50px;
+}
+
+
+/* MEDIA CAROUSEL ITEM SPACING */
+.about-us-info .owl-item {
+  padding: 0 15px;   /* visual breathing room */
+}
+
+/* MEDIA CAROUSEL IMAGE SIZE */
+.about-us-info .about-us-img img {
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* FORCE SPACE BETWEEN PRODUCT SLIDES */
+#about-us .owl-item {
+  padding: 0 20px;   /* THIS creates visible space */
+  box-sizing: border-box;
+}
+
+/* Make images big but not touching */
+#about-us .about-us-img img {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  display: block;
+}
+
+#about-us .about-us-img {
+  padding: 10px;
+}
+
+/* PRODUCTS: add breathing room per item */
+#about-us .about-us-content {
+  padding: 20px;
+}
+
+/* PRODUCTS: slightly separate each product visually */
+#about-us .col-xl-3 {
+  display: flex;
+}
+
+/* PRODUCTS image sizing */
+#about-us .about-us-img img {
+  max-width: 360px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* PRODUCTS text spacing */
+#about-us .about-us-text {
+  margin-top: 16px;
+}
+
+/* =========================
+   HERO COUNTER – FINAL STYLE
+   ========================= */
+
+/* Counter background box */
+#counter-section {
+  background-color: var(--bs-accent-green);
+}
+
+/* Counter numbers */
+#counter-section .counter {
+  color: #ffffff;
+}
+
+/* Counter labels */
+#counter-section p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Vertical divider lines */
+#counter-section .number-counter:not(:last-child)::after {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+/* LIGHT THEME TEXT FIX */
+/*
+body,
+p {
+  color: #1E1E1E;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #0F4D3A;
+} */
+
+
+/* =========================
+   MEDIA SECTION – UNIFORM GRID
+   ========================= */
+
+#media .media-frame {
+  width: 100%;
+  height: 280px;              /* 🔧 adjust: 200–260px */
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Images & videos behave the same */
+#media .media-frame img,
+#media .media-frame video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* 🔥 critical */
+  border-radius: 12px;
+}
+
+/* Card padding */
+#media .about-us-content {
+  padding: 10px;
+}
+
+/* Caption spacing */
+#media .about-us-text {
+  margin-top: 12px;
+  text-align: center;
+}
+
+/* Carousel spacing */
+#media .owl-item {
+  padding: 0 22px;
+}
+
+
+#media .media-frame {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#media .media-frame:hover {
+  transform: scale(1.03);
+}
+
+#media .media-frame img,
+#media .media-frame video {
+  transform: scale(1.05);
+}
+
+
+
+
+/* =========================
+   MEDIA MODAL
+   ========================= */
+
+
+.media-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+
+  /* 🔥 KEY FIX */
+  overflow-y: auto;     /* allow scrolling */
+  padding: 40px 20px;
+
+  z-index: 9999;
+}
+
+
+
+.media-modal-content {
+  max-width: 95vw;
+  margin: 0 auto;
+}
+
+
+
+.media-modal img,
+.media-modal video {
+  width: 100%;
+  height: auto;           /* 🔥 critical */
+  object-fit: contain;
+  display: block;
+}
+
+
+.media-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+/* =========================
+   PLAY ICON (hover)
+   ========================= */
+
+.media-frame.video::after {
+  content: "▶";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+  color: white;
+  background: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+
+/* =========================
+   CAROUSEL DRAG INDICATOR
+   ========================= */
+
+.carousel-hint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 18px 0 32px;
+  user-select: none;
+}
+
+.carousel-hint .drag-text {
+  font-family: 'Neutral Face', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  color: var(--bs-accent-green);
+  opacity: 0.6;
+}
+
+.carousel-hint .drag-arrow {
+  font-size: 28px;
+  color: var(--bs-accent-green);
+  opacity: 0.7;
+  animation: dragBounce 1.6s ease-in-out infinite;
+}
+
+.carousel-hint .drag-arrow.left {
+  animation-delay: 0s;
+}
+
+.carousel-hint .drag-arrow.right {
+  animation-delay: 0.8s;
+}
+
+@keyframes dragBounce {
+  0%   { transform: translateX(0); opacity: 0.4; }
+  50%  { transform: translateX(6px); opacity: 1; }
+  100% { transform: translateX(0); opacity: 0.4; }
+}
+
+
+@keyframes dragPulse {
+  0%   { opacity: 0.3; transform: translateX(0); }
+  50%  { opacity: 0.8; transform: translateX(-6px); }
+  100% { opacity: 0.3; transform: translateX(0); }
+}
+
+
+
+
+
+
+
+
+.media-frame.video:hover::after {
+  opacity: 1;
+}
+
+
+/* Cursor hint for draggable carousels */
+#media .owl-stage,
+#testimonial .owl-stage {
+  cursor: grab;
+}
+
+#media .owl-stage:active,
+#testimonial .owl-stage:active {
+  cursor: grabbing;
+}
+
+
+
+/* =========================
+   AWARDS – IMAGE SIZE (FINAL)
+   ========================= */
+
+#awards .about-us-img {
+  max-width: 600px;   /* 👈 adjust: 480–600px as you like */
+  width: 100%;
+  margin: 0 auto;
+}
+
+#awards .about-us-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;     /* no cropping */
+  border-radius: 16px;
+}
+
+
+
+/* =========================
+   AWARDS TEXT ALIGNMENT
+   ========================= */
+
+#awards .about-us-content {
+  justify-content: flex-start !important;
+}
+
+#awards .about-us-text {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+
+/* Reduce top/bottom spacing inside awards section */
+#awards .about-us-info {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+
+
+#awards .paragraph-quote {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+#awards p {
+  line-height: 1.7;
+}
+
+
+
+
+
+
+/* =========================
+   ENDORSEMENTS – FINAL FIX
+   ========================= */
+
+/* Override old testimonial image limit */
+#customers-testimonials .owl-item img {
+  max-width: none !important;
+}
+
+/* Proper card size */
+
+#customers-testimonials .shadow-effect {
+  width: 420px;
+  padding: 32px 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+
+  display: flex;
+  flex-direction: column;     /* 🔥 stack image + caption */
+  align-items: center;
+}
+
+
+/* Make image behave correctly */
+#customers-testimonials img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* 🔥 IMPORTANT FIX */
+  border-radius: 18px;
+}
+
+/* Center item normal size */
+#customers-testimonials .owl-item.active.center {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Side items smaller & faded */
+#customers-testimonials .owl-item {
+  opacity: 0.35;
+  transform: scale(0.8);
+  transition: all 0.4s ease;
+}
+
+.endorsement-caption {
+  font-size: 1rem;
+  color: var(--text-main);
+  text-align: center;
+  max-width: 360px;
+  line-height: 1.4;
+}
+#customers-testimonials img {
+  margin-bottom: 12px;
+}
+
+
+/* =========================
+   HERO VIDEO FIX
+   ========================= */
+
+#hero-section .media-frame {
+  position: relative;
+  z-index: 3; /* ABOVE canvas */
+}
+
+#hero-section video {
+  display: block;
+}
+
+/* Remove play overlay for hero video */
+#hero-section .media-frame.video::after {
+  display: none;
+} 
+
+
+
+/* =========================
+   PRODUCTS – TALLER VIDEOS (CLEAR, NO CROP)
+   ========================= */
+
+#about-us .about-us-img {
+  max-width: 480px;       /* controls width */
+  margin: 0 auto;
+  border-radius: 16px;
+}
+
+/* Videos: grow naturally, no crop */
+#about-us .about-us-img video {
+  width: 100%;
+  height: auto;           /* 🔥 key line */
+  object-fit: contain;
+  border-radius: 16px;
+}
+
+/* Images: keep consistent behavior */
+#about-us .about-us-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
+}
+
+
+/* =========================
+   MEDIA PAGE – PER ITEM CONTROL
+   ========================= */
+/* MEDIA – default behavior */
+#media .media-frame img,
+#media .media-frame video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+/* 🎤 Person speaking – keep face visible */
+#media .media-frame img.media-person {
+  object-fit: cover;
+  object-position: center top;
+  transform: scale(1.0);
+}
+
+
+/* 📱 Instagram post – show full content */
+#media .media-frame img.media-instagram {
+  object-fit: contain;
+  background: #ffffff;
+  transform: scale(1.0);
+}
+
+
+/* 🤖 Robot demo – slightly zoomed for clarity */
+#media .media-frame img.media-robot {
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.05);
+}
+
+
+/* =========================
+   MEDIA MODAL – SHOW FULL IMAGE
+   ========================= */
+
+.media-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 40px;
+}
+
+.media-modal video {
+  min-height: 300px;   /* 🔥 prevents zero-height paint */
+}
+
+/* Modal content wrapper */
+.media-modal-content {
+  max-width: 95vw;
+  max-height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FULL image visibility */
+.media-modal img,
+.media-modal video {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;   /* 🔥 THIS IS THE KEY */
+}
+
+/* Close button */
+.media-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+
+/* =========================
+   EVENTS – PARAGRAPH SPACING
+   ========================= */
+
+#portfolio p {
+  margin-bottom: 1.2rem !important;
+}
+
+
+
+/* =========================
+   RESEARCH PAPERS – KEEP CASE
+   ========================= */
+
+#our-services .accordion-button,
+#our-services .accordion-title {
+  text-transform: none !important;
+}
+
+/* =========================
+   CONTACT – LINKEDIN ICON
+   ========================= */
+
+.contact-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--bs-accent-green);
+  font-size: 20px;
+  border: 1px solid rgba(15, 77, 58, 0.3);
+  transition: all 0.3s ease;
+}
+
+.contact-social a:hover {
+  background-color: var(--bs-accent-green);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   RESEARCH PAPERS – TITLE CASE FIX
+   ========================= */
+
+#our-services .accordion-title {
+  font-family: 'Manrope', sans-serif !important;
+  text-transform: none !important;
+}
+
+#our-services .accordion-title {
+  font-family: 'Manrope', sans-serif !important;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-transform: none !important;
+}
+
+/* =========================
+   PRODUCTS – OPTION B (4 per row, bigger cards)
+   ========================= */
+
+/* Make product cards taller & roomier */
+#about-us .about-us-content {
+  padding: 32px;
+}
+
+/* Remove 16:9 lock ONLY for products */
+#about-us .media-frame {
+  aspect-ratio: unset;      /* 🔥 key line */
+  min-height: 320px;        /* controls box height */
+}
+
+/* Let videos fill height naturally */
+#about-us .media-frame video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;      /* no crop */
+}
+
+/* Make product videos feel more dominant */
+#about-us .about-us-img {
+  max-width: 100%;
+}
+
+
+/* =========================
+   PRODUCTS – INCREASE VIDEO HEIGHT ONLY
+   (4 per row, no layout change)
+   ========================= */
+
+/* Override global 16:9 ONLY for products */
+#about-us .media-frame {
+  aspect-ratio: auto;        /* 🔥 remove height lock */
+  height: 260px;             /* 🔥 controls video length */
+}
+
+/* Make video fill the taller frame */
+#about-us .media-frame video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;       /* no crop */
+}
+
+
+/* =========================
+   PRODUCTS – FINAL OVERRIDE (THIS ONE WINS)
+   ========================= */
+
+/* Kill global 16:9 + cover for products ONLY */
+#about-us .media-frame {
+  aspect-ratio: unset !important;
+  height: 260px !important;   /* 👈 adjust 260–300 safely */
+}
+
+/* Let video grow vertically */
+#about-us .media-frame video {
+  height: 100% !important;
+  width: 100%;
+  object-fit: contain !important;
+}
+
+.scroll-down {
+  bottom: 40px;   /* reduce from ~100px */
+}
+
+#about-us .section-heading {
+  margin-bottom: 20px;   /* reduce gap below heading */
+}
+
+#about-us h3 {
+  margin-bottom: 0 !important;
+}
+
+#awards {
+  padding-top: 20px;   /* override section spacing */
+}
+
+#awards .section-heading {
+  margin-bottom: 16px;
+}
+
+#awards h3 {
+  margin-top: 0 !important;
+}
+
+
+/* =========================
+   REMOVE FAKE GAP BEFORE AWARDS
+   ========================= */
+
+/* Disable translate gap for awards */
+#awards {
+  transform: none !important;
+}
+
+
+#about-us {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+#about-us .about-us-info {
+  margin-bottom: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+
+#awards .section-heading {
+  margin-top: 0 !important;
+  margin-bottom: 12px !important;
+}
+
+#awards h3 {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* FINAL FIX: tighten space before AWARDS */
+#awards {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+#awards .section-heading {
+  margin-top: 0 !important;
+}
+
+/* 🔧 GLOBAL: remove accidental gaps between sections */
+section {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+
+/* =========================
+   EVENTS – TIGHT TOP SPACING
+   ========================= */
+
+#portfolio {
+  padding-top: 0.25rem !important;
+}
+
+
+#portfolio .section-heading {
+  margin-top: 0 !important;
+  margin-bottom: 1.25rem !important;
+}
+
+
+
+/* Reduce bottom space after MEDIA */
+#media .about-us-info {
+  margin-bottom: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+
+/* =========================
+   GLOBAL HEADING SPACING FIX
+   ========================= */
+
+/* Reduce space BEFORE every section heading */
+section .section-heading {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Control spacing ABOVE headings */
+section {
+  padding-top: 1.5rem !important;   /* 🔧 adjust: 1–2rem */
+}
+
+/* Ensure headings don’t inherit weird margins */
+section h3 {
+  margin-top: 0 !important;
+}
+
+
+/* FIX: Research Papers – remove extra top spacing */
+#our-services {
+  padding-top: 0 !important;
+}
+
+#our-services .our-services-content {
+  padding-top: 0 !important;
+}
+
+/* FIX: Endorsements – reduce bottom gap */
+#testimonial {
+  padding-bottom: 0 !important;
+}
+
+#testimonial .testimonial-container {
+  padding-bottom: 0 !important;
+}
+
+/* Reduce fake gap created by carousel items */
+#customers-testimonials .item {
+  margin-bottom: 32px;   /* was 80px */
+}
+
+
+/* FIX 1: Prevent testimonials from inflating section height */
+#customers-testimonials {
+  overflow: hidden;
+}
+
+#our-services {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* =========================
+   REAL SPACING FIX (FINAL)
+   ========================= */
+
+/* Prevent Owl Carousel from inflating layout height */
+#customers-testimonials {
+  overflow: hidden;
+}
+
+/* Remove layout-breaking margin */
+#customers-testimonials .item {
+  margin-bottom: 0;
+}
+
+/* Keep visual spacing INSIDE cards only */
+#customers-testimonials .shadow-effect {
+  padding-bottom: 32px;
+}
+
+/* Collapse endorsements section bottom */
+#testimonial {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Ensure Research Papers starts immediately */
+#our-services {
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+   EVENTS – heading spacing
+   ========================= */
+
+#portfolio .section-heading {
+  margin-bottom: 2.25rem !important;  /* adjust 2–3rem if needed */
+}
+
+
+
+/* =========================
+   GLOBAL SECTION HEADING SPACING
+   (match ENDORSEMENTS)
+   ========================= */
+
+/* Same spacing under every section heading */
+section .section-heading {
+  margin-bottom: 1.5rem !important;  /* matches mt-4 */
+}
+
+/* Ensure h3 itself adds no extra space */
+section .section-heading h3 {
+  margin-bottom: 0 !important;
+}
+
+/* =========================
+   AWARDS – IMAGE WIDTH (FINAL)
+   ========================= */
+
+#awards .about-us-img {
+  max-width: 300px;     /* ← change this freely */
+  width: 100%;
+  margin: 0 auto;
+}
+
+#awards .about-us-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transform: none;     /* kill zoom effects */
+}
+
+/* =========================
+   AWARDS – FAT IMAGE (SIDEWAYS STRETCH)
+   ========================= */
+
+#awards .about-us-img {
+  width: 100%;
+  max-width: none;          /* 🔥 important */
+  margin: 0 auto;
+}
+
+#awards .about-us-img img {
+  height: 520px;            /* 👈 controls vertical size 260 */
+  width: auto;              /* 🔥 allows sideways growth */
+  max-width: 100%;
+  object-fit: contain;      /* no crop */
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* ===== Contact Social LinkedIn Fix ===== */
+
+.contact-social a {
+  width: 50px;
+  height: 50px;
+  background-color: #0F4D3A;   /* green circle */
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.contact-social a i {
+  font-size: 22px;             /* force visible size */
+  color: #ffffff;              /* force visible color */
+  display: inline-block;
+  opacity: 1;
+  line-height: 1;
+}
+
+/* Force Font Awesome Brand font */
+.fab {
+  font-family: "Font Awesome 6 Brands" !important;
+  font-weight: 400;
+}
+
+.contact-social i {
+  color: #ffffff;
+  font-size: 22px;
+  opacity: 1;
+}
+
+
+/* Modal videos black screen fix */
+.media-modal video {
+  min-height: 320px;
+  background: black;
+}
+
+
+
+/* =========================
+   FINAL, CLEAN MEDIA FIX (ONLY ONE)
+   ========================= */
+
+/* ---------- PRODUCTS (natural, no crop) ---------- */
+#about-us .media-frame {
+  height: auto;
+  background: transparent;
+}
+
+#about-us .media-frame video,
+#about-us .media-frame img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* ---------- MEDIA (uniform cards) ---------- */
+#media .media-frame {
+  width: 100%;
+  height: 220px;        /* change to 240px if you want taller */
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#media .media-frame video,
+#media .media-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* THIS is what makes them same size */
+  display: block;
+}
+
+/* ---------- MODAL (full view) ---------- */
+.media-modal img,
+.media-modal video {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* PRODUCTS: remove fake play button */
+#about-us .media-frame.video::after {
+  display: none !important;
+}
+
+
+/* PRODUCTS: remove black container boxes */
+#about-us .media-frame {
+  height: auto !important;
+  background: transparent !important;
+  overflow: visible !important;
+}
+/* PRODUCTS: natural video size, no crop */
+#about-us .media-frame video {
+  width: 100%;
+  height: auto !important;
+  object-fit: contain !important;
+  display: block;
+}
+
+/* PRODUCTS: reduce gap between media and caption */
+#about-us .about-us-text {
+  margin-top: 3px !important;   /* try 4–8px */
+}
+
+
+/* =========================
+   PRODUCTS – 2 PER ROW
+   ========================= */
+
+/* Force 2 products per row on desktop */
+#about-us .col-xl-3 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+/* Tablet: still 2 per row */
+@media (max-width: 992px) {
+  #about-us .col-xl-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* Mobile: 1 per row */
+@media (max-width: 576px) {
+  #about-us .col-xl-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* PRODUCTS – make videos feel bigger */
+#about-us .media-frame {
+  height: auto;
+}
+
+#about-us .media-frame video,
+#about-us .media-frame img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* =========================
+   MOVE AWARDS HEADING UP
+   ========================= */
+
+/* Reduce space AFTER products */
+#about-us {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Kill extra gap before AWARDS */
+#awards {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Pull the heading itself upward */
+#awards .section-heading {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  margin-bottom: 1.25rem !important;
+}
+
+/* Ensure no hidden transform spacing */
+#awards {
+  transform: none !important;
+}
+
+
+/* ==================================================
+   GLOBAL SECTION SPACING — MATCH EVENTS ↔ ENDORSEMENTS
+   ================================================== */
+
+/* 1. Normalize ALL sections */
+section {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* 2. Normalize spacing under every section heading */
+section .section-heading {
+  margin-bottom: 1.25rem !important;  /* same visual rhythm */
+}
+
+/* 3. Kill stray top margins on headings */
+section h3 {
+  margin-top: 0 !important;
+}
+
+/* 4. Remove section-specific padding inflation */
+#about-us,
+#awards,
+#media,
+#portfolio,
+#testimonial,
+#our-services,
+#get-in-touch {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+
+/* ==================================================
+   FINAL SECTION SPACING CONTROL (BEGINNER SAFE)
+   ================================================== */
+
+/* 1. Control spacing between ALL sections */
+section {
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* 2. Control spacing BELOW section headings */
+section .section-heading {
+  margin-bottom: 0.5rem !important;
+}
+
+/* 3. Remove hidden top margins on headings */
+section h3 {
+  margin-top: 0 !important;
+}
+
+
+/* ==================================================
+   SECTION-TO-SECTION SPACING (EXCEPT HERO)
+   ================================================== */
+
+/* Reduce space ABOVE every section EXCEPT the first one */
+section:not(#hero-section) {
+  padding-top: 0.75rem !important;
+}
+
+/* Reduce space BELOW every section */
+section {
+  padding-bottom: 0.75rem !important;
+}
+
+/* Tighten spacing below section headings */
+section .section-heading {
+  margin-bottom: 0.75rem !important;
+}
+
+/* Ensure headings don’t push content down */
+section h3 {
+  margin-top: 0 !important;
+}
+
+/* ===== FORCE REDUCE SPACE ABOVE AWARDS ===== */
+#awards {
+  padding-top: 0 !important;
+}
+
+/* ✅ Move ONLY the AWARDS heading up (SAFE) */
+#awards .section-heading {
+  margin-top: -30px !important;   /* 🔧 try -20 to -40 */
+}
+
+/* =========================
+   FIX: Reduce space AFTER PRODUCTS
+   ========================= */
+
+/* Remove extra bottom margin from product cards */
+#about-us .col-xl-3 {
+  margin-bottom: 12px !important;   /* was mb-4 (~24px) */
+}
+
+/* Tighten bottom of PRODUCTS section */
+#about-us {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* =========================
+   FIX: Reduce space AFTER MEDIA
+   ========================= */
+
+/* Reduce bottom spacing of media cards */
+#media .about-us-content {
+  margin-bottom: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+/* Tighten bottom of MEDIA section */
+#media {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* =========================
+   FINAL: AWARDS TOP SPACING
+   ========================= */
+
+/* Do NOT move the whole section */
+#awards {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Move ONLY the AWARDS heading upward */
+#awards .section-heading {
+  margin-top: -20px !important;   /* 🔧 change -15 to -30 */
+  padding-top: 0 !important;
+}
+
+
+/* =========================
+   FORCE EVENTS TO MOVE UP
+   ========================= */
+
+/* Override global section padding ONLY for EVENTS */
+#portfolio {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
