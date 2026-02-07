@@ -2495,3 +2495,9 @@ section h3 {
     margin-top: 0px !important;
     padding-top: 10px !important; /* Adjust this 10px if you want it even closer */
 }
+
+/* FINAL: kill Owl Carousel bottom gap */
+#media .owl-stage-outer {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
