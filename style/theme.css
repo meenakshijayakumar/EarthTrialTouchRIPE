@@ -2385,8 +2385,8 @@ section h3 {
 
 /* Reduce bottom spacing of media cards */
 #media .about-us-content {
-  margin-bottom: 12px !important;
-  padding-bottom: 12px !important;
+  margin-bottom: 8px !important;
+  padding-bottom: 8px !important;
 }
 
 /* Tighten bottom of MEDIA section */
