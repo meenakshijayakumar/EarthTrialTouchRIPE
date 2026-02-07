@@ -2305,3 +2305,26 @@ section h3 {
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
 }
+
+
+/* ==================================================
+   FINAL SECTION SPACING CONTROL (BEGINNER SAFE)
+   ================================================== */
+
+/* 1. Control spacing between ALL sections */
+section {
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* 2. Control spacing BELOW section headings */
+section .section-heading {
+  margin-bottom: 1rem !important;
+}
+
+/* 3. Remove hidden top margins on headings */
+section h3 {
+  margin-top: 0 !important;
+}
