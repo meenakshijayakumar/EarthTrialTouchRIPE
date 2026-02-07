@@ -1331,10 +1331,19 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.03);
 }
 
+/*
 #media .media-frame img,
 #media .media-frame video {
   transform: scale(1.05);
 }
+*/
+
+
+#media .media-frame img,
+#media .media-frame video {
+  transform: none !important;
+}
+
 
 
 
@@ -2511,5 +2520,15 @@ section h3 {
 #portfolio {
   padding-top: 0 !important;
   margin-top: 0 !important;
+}
+
+/* FIX: Stop MEDIA carousel from inflating height */
+#media .owl-stage-outer {
+  height: auto !important;
+}
+
+#media .owl-stage {
+  display: flex;
+  align-items: stretch;
 }
 
