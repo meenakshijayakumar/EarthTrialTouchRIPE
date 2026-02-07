@@ -2313,15 +2313,15 @@ section h3 {
 
 /* 1. Control spacing between ALL sections */
 section {
-  padding-top: 0.75rem !important;
-  padding-bottom: 0.75rem !important;
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
 
 /* 2. Control spacing BELOW section headings */
 section .section-heading {
-  margin-bottom: 1rem !important;
+  margin-bottom: 0.5rem !important;
 }
 
 /* 3. Remove hidden top margins on headings */
