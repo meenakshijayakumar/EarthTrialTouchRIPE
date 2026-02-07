@@ -2357,6 +2357,10 @@ section h3 {
 /* ===== FORCE REDUCE SPACE ABOVE AWARDS ===== */
 #awards {
   padding-top: 0 !important;
-  margin-top: -40px !important; /* 🔧 adjust: -20 to -60 */
+}
+
+/* ✅ Move ONLY the AWARDS heading up (SAFE) */
+#awards .section-heading {
+  margin-top: -30px !important;   /* 🔧 try -20 to -40 */
 }
 
