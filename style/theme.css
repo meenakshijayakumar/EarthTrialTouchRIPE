@@ -2501,3 +2501,15 @@ section h3 {
   padding-bottom: 0 !important;
   margin-bottom: 0 !important;
 }
+
+/* FINAL: tighten MEDIA → EVENTS spacing */
+#media {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+#portfolio {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
