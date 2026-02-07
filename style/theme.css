@@ -2433,12 +2433,12 @@ section h3 {
 
 /* This targets the Media section container */
 #media {
-  padding-bottom: 5px !important; /* Reduces the inner bottom space */
+  padding-bottom: 1px !important; /* Reduces the inner bottom space */
   margin-bottom: 0 !important;    /* Removes any outer bottom space */
 }
 /* This targets the Events section container */
 #events {
-  padding-top: 5px !important;  /* Brings the content/heading closer to the top */
+  padding-top: 1px !important;  /* Brings the content/heading closer to the top */
   margin-top: 0 !important;      /* Ensures no extra gap outside the section */
 }
 
