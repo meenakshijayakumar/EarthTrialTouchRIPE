@@ -2249,34 +2249,6 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 8px !important;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* FIX: Stop MEDIA carousel from inflating height */
 #media .owl-stage-outer {
   height: auto !important;
@@ -2287,6 +2259,38 @@ h1, h2, h3, h4, h5, h6 {
   align-items: stretch;
 }
 
+
+
+
+
+
+/* PRODUCTS – MEDIA (FINAL) */
+#about-us .media-frame {
+  height: auto;
+  background: transparent;
+}
+
+#about-us .media-frame video,
+#about-us .media-frame img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+
+/* AWARDS – IMAGE SIZE (SINGLE SOURCE) */
+#awards .about-us-img {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#awards .about-us-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 
 /* =========================================
    FINAL SECTION & GAP CONTROL (AUTHORITATIVE)
