@@ -2355,3 +2355,18 @@ section .section-heading {
   padding-bottom: 0.25rem !important;
 }
 
+
+/* =========================
+   HERO LOGOS UNDER VIDEO
+   ========================= */
+
+#hero-section .hero-logos {
+  max-width: 85%;        /* same width as video */
+}
+
+#hero-section .hero-logos img {
+  height: 32px;          /* 🔹 small logos */
+  width: auto;
+  opacity: 0.85;
+}
+
