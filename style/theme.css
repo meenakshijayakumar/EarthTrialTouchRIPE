@@ -2375,7 +2375,7 @@ section .section-heading {
 #hero-section .hero-video video {
   width: 100%;
   height: auto;
-  max-height: 45vh;     /* 🔥 THIS is what makes counter fit */
+  max-height: 40vh;     /* 🔥 THIS is what makes counter fit */
   object-fit: contain;
 }
 
