@@ -2414,4 +2414,7 @@ section .section-heading {
 }
 
 
+#hero-section {
+  padding-bottom: 120px;  /* creates real space for scroll-down */
+}
 
