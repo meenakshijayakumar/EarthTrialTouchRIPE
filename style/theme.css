@@ -481,7 +481,7 @@ ul {
   display: flex;
   justify-content: center;
   left: 50%;
-  bottom: 100px;
+  bottom: 40px;
   transform: translate(-50%, -50%);
 }
 
@@ -2363,19 +2363,20 @@ section .section-heading {
   100% { transform: translateX(0); opacity: 0.4; }
 }
 
+
+
 /* =========================
-   HERO VIDEO – SIZE CONTROL
+   HERO VIDEO – FINAL RESPONSIVE CONTROL
    ========================= */
 
 #hero-section .hero-video {
-  max-width: 720px;     /* 🔥 MAIN CONTROL */
+  max-width: 760px;        /* controls width on large screens */
   margin: 0 auto;
 }
 
 #hero-section .hero-video video {
   width: 100%;
   height: auto;
-  max-height: 40vh;     /* 🔥 THIS is what makes counter fit */
+  max-height: 38vh;        /* 🔥 KEY: keeps counter visible */
   object-fit: contain;
 }
-
