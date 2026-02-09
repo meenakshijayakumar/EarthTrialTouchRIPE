@@ -2401,7 +2401,7 @@ section .section-heading {
 .scroll-down {
   position: absolute;
   left: 50%;
-  bottom: 32px;
+  bottom: 28px;
   transform: translateX(-50%);
   z-index: 20; /* 🔥 REQUIRED */
 }
