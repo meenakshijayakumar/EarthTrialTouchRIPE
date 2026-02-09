@@ -2406,3 +2406,7 @@ section .section-heading {
   z-index: 20; /* 🔥 REQUIRED */
 }
 
+.hero-inner {
+  position: relative;
+  min-height: 100vh;   /* THIS is the anchor */
+}
