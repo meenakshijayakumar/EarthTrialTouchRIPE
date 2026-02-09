@@ -2399,12 +2399,14 @@ section .section-heading {
 
 
 .scroll-down {
-  position: absolute;        /* 🔥 key fix */
+  position: relative;
+  margin-top: 24px;
+  margin-bottom: 40px;   /* 🔥 reserve space below */
   left: 50%;
-  bottom: -40px;             /* keeps it visible between hero & products */
   transform: translateX(-50%);
-  z-index: 30;               /* ensures it stays on top */
+  z-index: 10;
 }
+
 
 
 
@@ -2418,3 +2420,7 @@ section .section-heading {
   padding-bottom: 120px;  /* creates real space for scroll-down */
 }
 
+
+#about-us {
+  margin-top: 120px;   /* 🔥 creates space for scroll-down */
+}
