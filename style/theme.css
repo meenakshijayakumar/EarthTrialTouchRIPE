@@ -2399,14 +2399,15 @@ section .section-heading {
 
 
 .scroll-down {
-  position: absolute;
+  position: relative;
+  margin-top: 24px;
+  margin-bottom: 12px;
   left: 50%;
-  bottom: -80px;
   transform: translateX(-50%);
-  z-index: 20; /* 🔥 REQUIRED */
 }
+
 
 .hero-inner {
   position: relative;
-  min-height: 100vh;   /* THIS is the anchor */
+  padding-bottom: 80px; /* space for scroll-down */
 }
