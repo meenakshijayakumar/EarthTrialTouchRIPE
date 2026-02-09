@@ -2397,3 +2397,12 @@ section .section-heading {
   opacity: 1;
 }
 
+
+.scroll-down {
+  position: absolute;
+  left: 50%;
+  bottom: 32px;
+  transform: translateX(-50%);
+  z-index: 20; /* 🔥 REQUIRED */
+}
+
