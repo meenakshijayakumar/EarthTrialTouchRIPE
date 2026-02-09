@@ -2400,11 +2400,11 @@ section .section-heading {
 
 .scroll-down {
   position: relative;
-  margin-top: 24px;
-  margin-bottom: 40px;   /* 🔥 reserve space below */
+  margin-top: 32px;     /* space from counter */
+  margin-bottom: 24px;  /* space before PRODUCTS */
   left: 50%;
   transform: translateX(-50%);
-  z-index: 10;
+  z-index: 5;
 }
 
 
@@ -2421,6 +2421,3 @@ section .section-heading {
 }
 
 
-#about-us {
-  margin-top: 120px;   /* 🔥 creates space for scroll-down */
-}
