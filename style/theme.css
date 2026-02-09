@@ -2399,15 +2399,19 @@ section .section-heading {
 
 
 .scroll-down {
-  position: relative;
-  margin-top: 24px;
-  margin-bottom: 12px;
+  position: absolute;        /* 🔥 key fix */
   left: 50%;
+  bottom: -40px;             /* keeps it visible between hero & products */
   transform: translateX(-50%);
+  z-index: 30;               /* ensures it stays on top */
 }
+
 
 
 .hero-inner {
   position: relative;
   padding-bottom: 80px; /* space for scroll-down */
 }
+
+
+
