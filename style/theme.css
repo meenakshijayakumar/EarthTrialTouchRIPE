@@ -2380,3 +2380,20 @@ section .section-heading {
   max-height: 38vh;        /* 🔥 KEY: keeps counter visible */
   object-fit: contain;
 }
+
+
+/* =========================
+   NAVBAR – PARTNER LOGOS
+   ========================= */
+
+.navbar-partner-logos img {
+  height: 28px;        /* 🔹 small & elegant */
+  width: auto;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.navbar-partner-logos img:hover {
+  opacity: 1;
+}
+
